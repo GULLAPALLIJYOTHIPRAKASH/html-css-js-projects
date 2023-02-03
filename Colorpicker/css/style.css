@@ -1,0 +1,266 @@
+
+
+/* global style */
+*,::after,::before{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+
+}
+body{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+text-decoration: none;
+}
+ul{
+list-style-type: none;
+}
+
+*{
+transition:  0.3s linear;
+}
+.wrapper{
+max-width: 1250px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 10px;
+padding-right: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.text-container{
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.text-center{
+text-align: center;
+}
+/* padding classes */
+@media screen and (max-width: 991px) {
+.paddingTopMobile-ten {
+padding-top: 10px !important;
+}
+.paddingTopMobile-twenty {
+padding-top: 20px !important;
+}
+.paddingTopMobile-thirty {
+padding-top: 30px !important;
+}
+.paddingTopMobile-forty {
+padding-top: 40px !important;
+}
+.paddingTopMobile-fifty {
+padding-top: 50px !important;
+}
+.paddingBottomMobile-ten {
+padding-bottom: 10px !important;
+}
+.paddingBottomMobile-twenty {
+padding-bottom: 20px !important;
+}
+.paddingBottomMobile-thirty {
+padding-bottom: 30px !important;
+}
+.paddingBottomMobile-forty {
+padding-bottom: 40px !important;
+}
+.paddingBottomMobile-fifty {
+padding-bottom: 50px !important;
+}
+}
+@media screen and (min-width: 992px) {
+.paddingTopDesktop-ten {
+padding-top: 10px !important;
+}
+.paddingTopDesktop-twenty {
+padding-top: 20px !important;
+}
+.paddingTopDesktop-thirty {
+padding-top: 30px !important;
+}
+.paddingTopDesktop-forty {
+padding-top: 40px !important;
+}
+.paddingTopDesktop-fifty {
+padding-top: 50px !important;
+}
+.paddingTopDesktop-sixty {
+padding-top: 60px !important;
+}
+.paddingTopDesktop-seventy {
+padding-top: 70px !important;
+}
+.paddingTopDesktop-eighty {
+padding-top: 80px !important;
+}
+.paddingTopDesktop-ninety {
+padding-top: 90px !important;
+}
+.paddingTopDesktop-hundred {
+padding-top: 100px !important;
+}
+.paddingBottomDesktop-ten {
+padding-bottom: 10px !important;
+}
+.paddingBottomDesktop-twenty {
+padding-bottom: 20px !important;
+}
+.paddingBottomDesktop-thirty {
+padding-bottom: 30px !important;
+}
+.paddingBottomDesktop-forty {
+padding-bottom: 40px !important;
+}
+.paddingBottomDesktop-fifty {
+padding-bottom: 50px !important;
+}
+.paddingBottomDesktop-sixty {
+padding-bottom: 60px !important;
+}
+.paddingBottomDesktop-seventy {
+padding-bottom: 70px !important;
+}
+.paddingBottomDesktop-eighty {
+padding-bottom: 80px !important;
+}
+.paddingBottomDesktop-ninety {
+padding-bottom: 90px !important;
+}
+.paddingBottomDesktop-hundred {
+padding-bottom: 100px !important;
+}
+}
+
+/* color picker */
+.nav-container{
+width: 100%;
+min-height: 50px;
+background-color: white;
+border: 2px solid white;
+box-shadow: 10px 2px  10px  ;
+
+}   
+
+.nav-center .color-heading{ 
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+.nav-center .color-heading .color-title{
+color: #3777aa;
+font-size: 16px;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.color-heading .color-types{
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.color-heading .color-types .color-type{
+color:#222;
+font-size: 16px;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: capitalize;
+padding-left: 5px;
+padding-right: 5px;
+}
+.color-types .color-type:hover{
+color: #3777aa;
+
+}
+
+/* background-color */
+
+.background-color-container{
+width: 100%;
+display: flex;
+
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap:50px;
+}
+.nav-center{
+width: 100%;
+min-height: 50px;
+}
+
+
+
+.background-color-container .background-color {
+
+margin-top: 130px;
+
+
+}
+
+.background-color-container .background-color .color-select {
+color: white;
+background-color: #222;
+font-size: 30px;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: capitalize;
+text-align: center;
+padding: 20px;
+border-radius: 5px;
+
+
+}
+.background-color-container .background-color .color-select .color-code{
+color: blue;
+text-transform: none;
+}
+
+.background-color-container .button-colorspiner{
+width: 250px;
+height: 50px;
+background-color: white;
+color: black;
+font-size: 20px;
+text-transform: capitalize;
+text-align: center;
+border: 2px solid black;
+border-radius: 5px;
+cursor: pointer;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s linear;
+}
+.background-color-container .button-container .button-colorspiner:hover {
+background-color: black;
+color: white;
+}
+
+.button-container .button-colorspiner:active{
+transform: scale(0.92);
+}
+
+@media screen and (min-width: 992px) {
+
+.nav-container{
+min-height: 70px;
+}
+
+}
+
+
+
+
