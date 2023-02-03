@@ -1,0 +1,104 @@
+        /* sidebar styles */
+
+        .logo-section{
+            width: 30px;
+        }
+
+        .close-bar{
+            width: 25px;
+            cursor: pointer;
+        }
+
+        .sidebar-container{
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(204, 182, 182);
+            position: fixed;
+            top: 0;
+            left: -100%;
+            z-index: 10;
+            transition: all 0.2s linear;
+            
+            
+
+        }
+
+        .show-sidebar{
+            top: 0;
+            left: 0;
+        }
+
+        .show-sidebar{
+            position: fixed;
+            top: 0;
+            left:0;
+
+        }
+
+        .sidebar-social-main-links img{
+            width: 30px;
+        }
+
+        .sidebar-center .sidebar-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .sidebar-main-links{
+
+            margin-top: 50px;
+        }
+
+        .sidebar-center .sidebar-links{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sidebar-links .sidebar-link{
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            text-align: centers;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+
+        .sidebar-main-links .active,.sidebar-links .sidebar-link:hover{
+            color: black;
+            background-color: white;
+        }
+
+        .sidebar-social-main-links  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+
+        .sidebar-social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;  
+        }
+
+        .sidebar-social-link img{
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        
+
+

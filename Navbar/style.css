@@ -1,0 +1,134 @@
+
+
+/* global styles */
+
+*:focus{
+    outline-color: #3777aa;
+    outline-offset: 2px;
+    transition: 0.3s linear;
+}
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.wrapper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* navbar */
+.navbar-container{
+    width: 100%;
+  min-height: 50px;
+    background-color: rgb(183, 199, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.logo-section{
+    width: 70px;
+}
+.hamburger{
+    width: 25px;
+    justify-self: flex-end;
+}
+.nav-links-main{
+    display: none ;
+}
+.nav-social-links-main  img{
+    width: 30px;
+    display: none;
+}
+.navbar-center{
+    width: 100%;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-container{
+        min-height: 70px;
+    }
+    .navbar-center{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .hamburger{
+        display: none;
+    }
+    .nav-links-main{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-links-main .nav-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+    }
+    .nav-links-main  .nav-link{
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        transition: 0.3s linear;
+        padding: 5px 10px;
+    }
+    .nav-links .active,.nav-links .nav-link:hover{
+        color:white;
+        background-color: rgb(10, 10, 10);
+
+
+    }
+    .nav-social-links-main  img{
+        display: flex;
+        
+    }
+     .nav-social-links{
+        display: flex;
+        column-gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+     }
+
+     .nav-social-links .nav-social-link img{
+        width: 30px;
+        height: 30px;
+        border: 2px solid rgb(15, 14, 14);
+        border-radius: 11px;
+        padding: 5px 5px;
+        transition: 0.3s linear;
+
+     }
+     .nav-social-links .nav-social-link :hover{
+        transform: translateY(-4px);
+     }
+
+
+
+
+
+}

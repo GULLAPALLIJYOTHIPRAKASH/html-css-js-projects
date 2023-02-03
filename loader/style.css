@@ -1,0 +1,267 @@
+
+
+/* global styles */
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    *,::after,::before{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    ul{
+        list-style-type:none ;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+    
+    .header{
+        font-size: 30px;
+        color: #3777aa;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-align: center;
+        text-decoration: underline 3px black;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+/* cirlce loader*/
+    .loader{
+        width: 200px;
+        height: 200px;
+        border: 20px solid lightsteelblue;
+        border-radius: 50%;
+        border-top:20px solid #3777aa ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .loader{
+        animation-name: loader;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        
+    }
+    
+
+    @keyframes loader {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+/* circle-loader-filler*/
+.loader-filler{
+        width: 200px;
+        height: 200px;
+        border: 20px solid lightsteelblue;
+        border-radius: 50%;
+        animation-name:loader-filler ;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        margin-left: auto;
+        margin-right: auto;
+       
+        
+    
+       
+    }
+    
+
+    @keyframes loader-filler {
+        0%{
+            transform: rotate(0deg);
+            border-top: 20px solid red;
+            
+            
+        }
+        100%{
+            transform: rotate(360deg);
+            border-color: red ;
+          
+        }
+        
+    }
+
+    /* rectangle-loader */
+    .rectangle-loader{
+        width: 200px;
+        height: 50px;
+        border:2px solid black;
+        border-radius:10px ;
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+
+       
+
+       
+    }
+
+/* rectangle-loader inner */
+    .rectangle-loader-inner{
+        
+        height: 47px;
+        background-color: red;
+        border: 1px  transparent;
+        border-radius:5px  ;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        animation-name:rectangle-loader-inner ;
+        animation-duration: 3s;
+       
+        animation-timing-function: ease-out;  
+        animation-iteration-count:infinite ;
+
+       
+
+
+    }
+
+
+    @keyframes rectangle-loader-inner {
+
+        0%{
+            width: 0px;
+            background-color: white;
+            
+        }
+
+        25%{
+            width: 50px;
+            background-color:#3777aa;
+        }
+        50%{
+            width: 100px;
+            background-color:#3777aa;
+            
+        }
+
+        75%{
+            width: 150px;
+            background-color:#3777aa;
+           
+        }
+
+        100%{
+            width: 195px;
+            background-color:#3777aa;
+            
+        }
+        
+    }
+
+  /* double circle loader*/
+  .outer-loader{
+    width: 200px;
+    height: 200px;
+    border: 5px solid transparent  ;
+    border-top:5px solid brown ;
+    border-radius: 50%;
+    animation-name: double-loader;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+  }
+  
+  .middle-loader{
+    width: 150px;
+    height: 150px;
+    margin:20px ;
+    border: 5px solid transparent  ;
+    border-top:5px solid #3777aa ;
+    border-radius: 50%;
+
+  }
+  .inner-loader{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 5px solid transparent  ;
+    border-top:5px solid green ;
+    border-radius: 50%;
+
+  }
+
+  @keyframes double-loader {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+  }
+
+/*  */
+   /* small-crirle loader */
+
+   .small-circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border:1px solid transparent;
+    border-radius: 50%;
+    background-color:#3777aa;
+    animation-name: mover;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+
+      }
+
+    
+    
+    
+    
+
+
+   @keyframes mover {
+    0%{
+        transform: translateX(0px);
+       
+    }
+
+
+    
+    100%{
+      
+        
+        transform: translateX(1200px);
+        
+
+    }
+    
+   }
+
+   
