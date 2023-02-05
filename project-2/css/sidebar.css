@@ -99,6 +99,11 @@
             border: 2px solid white;
             border-radius: 5px;
             padding: 5px;
+            transition: all 0.3s linear;
+        }
+
+        .sidebar-social-link img:hover{
+            transform: translateY(-4px);
         }
 
         

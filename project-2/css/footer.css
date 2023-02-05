@@ -90,8 +90,13 @@
             border: 2px solid white;
             border-radius: 10px;
             padding: 5px;
+            transition: all 0.3s linear;
             
         }
+        .footer-social-links .footer-social-link img:hover{
+            transform: translateY(-4px);
+        }
+
 
         .footer-center .copyrights{
             color: white;
