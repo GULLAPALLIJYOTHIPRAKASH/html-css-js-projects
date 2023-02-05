@@ -15,6 +15,7 @@
             position: relative;
             z-index: 1;
             opacity: 1;
+
     
         }
 
@@ -36,10 +37,14 @@
             justify-content: center;
             align-items: center;
             gap:20px;
+
+            
         }
 
           .footer-center .footer-main-links{
             display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 40px;
             
         }
@@ -90,7 +95,7 @@
 
         .footer-center .copyrights{
             color: white;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: bold;
             text-transform: capitalize;
             letter-spacing: 1px;

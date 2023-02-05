@@ -1,0 +1,148 @@
+/*  about and booking page */
+
+
+.about-section-container .title{
+    color:#3777aa;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-section-container .underline{
+    width: 100px;
+    height: 5px;
+    background-color: #3777aa;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.about-section-container{
+    width: 100%;
+    background-color: rgba(193, 239, 224, 0.229);
+}
+
+.about-section .img-component{
+    aspect-ratio: 355/300;
+    overflow: hidden; 
+    border-radius: 10px 10px;
+
+    
+}
+.about-section .img-component img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px;
+
+}
+.about-section-container .about-info{
+    display: flex;
+    flex-direction: column;
+   row-gap: 30px;
+}
+
+.about-info .desc p{
+   font-size: 16px;
+   letter-spacing: 1px;
+}
+.about-text-component .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+.contact-info .name, .email,.date,.message{
+    font-size: 16px;
+    height: 45px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgba(10, 9, 9, 0.498);
+    border-radius: 2px;
+}
+.contact-info .message{
+    height: unset;
+    resize: vertical;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen  and (min-width: 992px){
+
+.about-section-container  .reverse-content  .about-section{
+    flex-direction: row-reverse;
+}
+
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    
+}
+
+.img-component ,.about-text-component{
+    flex:0 0 calc(50% - 30px);
+}
+
+.about-section-container .img-component{
+    aspect-ratio: 400/350;
+}
+
+.about-section .img-component img{
+    width: 100%;
+    height: 100%;
+}
+
+
+    
+}
+
+/* mobile width */
+
+@media screen and (max-width: 991px) {
+    .mobile-width{
+        width: 100%;
+    }
+    
+}
+
+
+/* desktop width*/
+@media screen and (min-width: 992px) {
+    .desktop-width{
+        width: 100%;
+    }
+    
+}
+
+
+/* button style blue*/
+
+.submit-button{
+    width: 100%;
+    min-height:45px ;
+    background-color: #3777aa;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ .submit-button:hover{
+    background-color:#2a6798;
+}
+
+svg#freepik_stories-study-abroad:not(.animated) .animable {opacity: 0;}svg#freepik_stories-study-abroad.animated #freepik--background-complete--inject-49 {animation: 1s 1 forwards linear zoomIn,1.5s Infinite  linear wind;animation-delay: 0s,1s;}svg#freepik_stories-study-abroad.animated #freepik--Globe--inject-49 {animation: 6s Infinite  linear spin;animation-delay: 0s;}svg#freepik_stories-study-abroad.animated #freepik--Airplane--inject-49 {animation: 1.5s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-study-abroad.animated #freepik--Locators--inject-49 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomIn,1.5s Infinite  linear wind;animation-delay: 0s,1s;}svg#freepik_stories-study-abroad.animated #freepik--Pencil--inject-49 {animation: 1.5s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-study-abroad.animated #freepik--Passport--inject-49 {animation: 1.5s Infinite  linear floating;animation-delay: 0s;}svg#freepik_stories-study-abroad.animated #freepik--Book--inject-49 {animation: 3s Infinite  linear wind;animation-delay: 0s;}svg#freepik_stories-study-abroad.animated #freepik--Character--inject-49 {animation: 6s Infinite  linear floating;animation-delay: 0s;}            @keyframes zoomIn {                0% {                    opacity: 0;                    transform: scale(0.5);                }                100% {                    opacity: 1;                    transform: scale(1);                }            }                    @keyframes wind {                0% {                    transform: rotate( 0deg );                }                25% {                    transform: rotate( 1deg );                }                75% {                    transform: rotate( -1deg );                }            }                 @keyframes spin {             from {                 transform: rotate(0);               }               to {                 transform: rotate(360deg);               }         }                 @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }        .animator-hidden { display: none; }

@@ -3,10 +3,12 @@
         .hero-page-container{
             width: 100%;
             height: 100%;
+            position: relative;
+            
         }
 
         .img-component .img-container{
-            aspect-ratio: 355/250;
+            aspect-ratio: 355/300;
             overflow: hidden;
             position: relative;
         }
@@ -16,9 +18,10 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            position: relative;
         }
 
-        .hero-page-section .hero-page-info{
+        /* .hero-page-section .hero-page-info{
             color: #3777aa;
             background-color: antiquewhite;
             font-size: 20px;
@@ -29,13 +32,179 @@
             padding: 5px 10px;
 
         
+        } */
+
+
+
+
+        .hero-page-section {
+            position: absolute  ;
+            top: 20%;
+            left: 50%;
+            /* background-color: blueviolet; */
+
+       
         }
+
+        .hero-page-section  .hero-content{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-self: flex-start;
+            gap: 10px;
+            padding: 10px 10px;
+        }
+
+        .hero-content >span{
+            color:black;
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            text-align:left ;
+
+            /* animation-name: visible-slow;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count:1;
+          */
+
+
+          /* animation-name: visible-slow_1;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-iteration-count:1; */
+           
+
+        }
+
+        .hero-content >h1{
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align:left ;
+            overflow: hidden;
+
+            
+            animation-name: visible-slow_1;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count:1;
+         
+
+           
+            
+        }
+
+        .hero-content .hero-page-info{
+            color: rgba(0, 0, 0, 0.788);
+            font-size: 16px;
+            line-height: 25px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+
+            animation-name: visible-slow_2;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count:1;
+           
+            
+
+
+        }
+
+        .hero-button-container .hero-button{
+            width: 200px;
+            min-height: 45px;
+            border: 2px solid #3777aa;
+            background-color: #3777aa;
+            color: white;
+            font-size: 16px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            /* display: inline-flex;
+            justify-content: center;
+            align-items: center; */
+            padding: 5px ;
+            transition: all 0.3s linear;
+          
+        }
+/* 
+        .hero-button-container .hero-button{
+
+            animation-name:bouncebutton;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+
+        } */
+
+        .hero-button-container .hero-button:hover{
+            background: transparent;
+           
+        }
+
+        /* @keyframes visible-slow {
+
+            0%{
+                color: transparent;
+            }
+
+            100%{
+                color: black;
+            }
+            
+        } */
+
+        @keyframes visible-slow_1 {
+
+            0%{
+                font-size: 0px;
+            }
+
+            100%{
+
+                font-size: 21px;
+            }
+            
+        }
+
+
+        @keyframes visible-slow_2 {
+
+            0%{
+                
+                  color: rgba(255, 255, 255, 0);
+            }
+
+            100%{
+
+                color: rgba(0, 0, 0, 0);
+            }
+            
+        }
+
+ 
+
+
+
+        
+
+
+
 
         @media screen and (min-width: 992px) {
 
             .img-component .img-container{
 
-                aspect-ratio: 1080/300;
+                aspect-ratio: 1250/550;
                 overflow: hidden;
             }
 
@@ -45,5 +214,23 @@
             object-fit: cover;
             object-position: center;
         }
+
+        .hero-page-section{
+            position: absolute;
+            top: 40%;
+            right: 10%;
+        }
+
+        .hero-content >h1{
+
+            font-size: 25px;
+            letter-spacing: 2px;
+
+    }
+
+
+    .hero-button-container {
+        margin-top: 10px;
+    }
             
         }

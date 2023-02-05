@@ -24,9 +24,10 @@
             transform: translateY(0%);
         }
 
-       .navbar-center .logo-section{
-            width: 30px;
-        }
+       /* .navbar-center .logo-section{
+            width: 100px;
+            border: 2px solid red;
+        } */
 
        .navbar-center  .hamburger{
            justify-self: flex-end;
@@ -144,5 +145,50 @@
             
 
 
+            
+        }
+
+
+ 
+
+        .navbar-container .navbar-center .logo-section .nav-title{
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            animation-name: textcolor;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          
+        }
+
+        @keyframes textcolor {
+
+            0%{
+                color: white;
+            }
+
+            10%{
+                color: rgb(222, 157, 157);
+            }
+
+            25%{
+                color: rgb(224, 196, 160);
+            }
+
+            50%{
+                color: rgb(237, 180, 159);
+            }
+
+            75%{
+                color: rgb(241, 185, 241);
+            }
+
+            100%{
+                color: rgb(165, 199, 226);
+            }
+            
             
         }

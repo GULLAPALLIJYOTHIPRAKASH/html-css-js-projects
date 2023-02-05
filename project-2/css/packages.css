@@ -1,4 +1,4 @@
-/* technology style */
+/* packages style */
 
 
 .section-title .title{
@@ -19,11 +19,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.technology-container{
+.packages-container{
     width: 100%;
     background-color: rgba(0, 255, 255, 0.183);
 }
-.single-technology{
+.single-packages{
     width: 100%;
     height: 100%;
     background-color: white;
@@ -31,15 +31,15 @@
     border-radius: 10px 10px;
     transition:  0.3s linear;
 }
-.single-technology:hover{
+.single-packages:hover{
     transform: scale(1.002) translateY(-4px);
 }
 
-.single-technology .img-container {
+.single-packages .img-container {
     aspect-ratio: 355/300;
     overflow: hidden;
 }
-.single-technology .img-container img{
+.single-packages .img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -48,7 +48,14 @@
     transition: 0.3s linear;
 }
 
-.technology-info .technology-title{
+.packages-info{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+.packages-info .packages-title{
     color: #3777aa;
     font-size: 20px;
     font-weight: bold;
@@ -74,12 +81,12 @@
         grid-template-columns: repeat(2,1fr);
     }
     
-    .technology-container .section-title .title{
+    .packages-container .section-title .title{
 
 font-size: 30px;
 }
 
-.single-technology:hover .img-container img{
+.single-packages:hover .img-container img{
   transform: scaleX(1.5) scaleY(1.5);
 
 }
@@ -92,14 +99,43 @@ font-size: 30px;
     
 }
 
-.technology-container .section-title .title{
+.packages-container .section-title .title{
 
   font-size: 30px;
 }
 
-.single-technology:hover .img-container img{
+.single-packages:hover .img-container img{
     transform: scaleX(1.5) scaleY(1.5);
  
 }
+
+}
+
+.packages-container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.packages-container .booking-button{
+
+    width: 100px;
+    min-height:45px;
+    background-color: #3777aa;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px ;
+    
+
+
 
 }

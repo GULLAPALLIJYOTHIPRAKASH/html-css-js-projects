@@ -1,8 +1,8 @@
         /* sidebar styles */
 
-        .logo-section{
+        /* .logo-section{
             width: 30px;
-        }
+        } */
 
         .close-bar{
             width: 25px;
@@ -12,7 +12,7 @@
         .sidebar-container{
             width: 100%;
             min-height: 100vh;
-            background-color: rgb(204, 182, 182);
+            background-color:	#404040;
             position: fixed;
             top: 0;
             left: -100%;
@@ -56,7 +56,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
         }
 
         .sidebar-links .sidebar-link{
@@ -66,21 +66,23 @@
             text-transform: capitalize;
             letter-spacing: 1px;
             text-align: centers;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
+            transition: all 0.2s linear;
         }
 
 
         .sidebar-main-links .active,.sidebar-links .sidebar-link:hover{
             color: black;
             background-color: white;
+            font-size:30px ;
         }
 
         .sidebar-social-main-links  {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 30px;
+            margin-top: 25px;
         }
 
 
@@ -102,3 +104,45 @@
         
 
 
+
+        .sidebar-container .sidebar-center .sidebar-header .logo-section .sidebar-title{
+            color: white;
+            font-size: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            animation-name: textcolor;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          
+        }
+
+        @keyframes textcolor {
+
+            0%{
+                color: white;
+            }
+
+            10%{
+                color: rgb(222, 157, 157);
+            }
+
+            25%{
+                color: rgb(224, 196, 160);
+            }
+
+            50%{
+                color: rgb(237, 180, 159);
+            }
+
+            75%{
+                color: rgb(241, 185, 241);
+            }
+
+            100%{
+                color: rgb(165, 199, 226);
+            }
+            
+            
+        }

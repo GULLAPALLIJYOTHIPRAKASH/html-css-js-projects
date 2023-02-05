@@ -13,11 +13,11 @@ let sidebar_home=document.querySelector(".close-home");
 //about
 let sidebar_about=document.querySelector(".close-about");
 
-// technology
-let sidebar_technology=document.querySelector(".close-technology");
+// packages
+let sidebar_packages=document.querySelector(".close-packages");
 
-//contact
-let sidebar_contact=document.querySelector(".close-contact");
+//booking
+let sidebar_booking=document.querySelector(".close-booking");
 
 
 let close_bar=document.querySelector(".close-bar");
@@ -28,8 +28,8 @@ close_bar.addEventListener("click",no_show);
 // sidebar
 sidebar_home.addEventListener("click",no_show);
 sidebar_about.addEventListener("click",no_show);
-sidebar_technology.addEventListener("click",no_show);
-sidebar_contact.addEventListener("click",no_show);
+sidebar_packages.addEventListener("click",no_show);
+sidebar_booking.addEventListener("click",no_show);
 
 
 
@@ -118,15 +118,15 @@ nav_links[1].addEventListener("click",active_about);
 nav_links[5].addEventListener("click",active_about);
 nav_links[9].addEventListener("click",active_about);
 
-// navbar,sidebar,footer event for  technology
-nav_links[2].addEventListener("click",active_technology);
-nav_links[6].addEventListener("click",active_technology);
-nav_links[10].addEventListener("click",active_technology);
+// navbar,sidebar,footer event for  packages
+nav_links[2].addEventListener("click",active_packages);
+nav_links[6].addEventListener("click",active_packages);
+nav_links[10].addEventListener("click",active_packages);
 
-// navbar,sidebar,footer event for contact
-nav_links[3].addEventListener("click",active_contact);
-nav_links[7].addEventListener("click",active_contact);
-nav_links[11].addEventListener("click",active_contact);
+// navbar,sidebar,footer event for booking
+nav_links[3].addEventListener("click",active_booking);
+nav_links[7].addEventListener("click",active_booking);
+nav_links[11].addEventListener("click",active_booking);
 
 
 
@@ -170,7 +170,7 @@ function active_about(){
     
 }
 
-    function active_technology(){
+    function active_packages(){
 
 
 
@@ -183,7 +183,7 @@ function active_about(){
         
         }
 
-        function active_contact(){
+        function active_booking(){
 
             nav_array();
                nav_links[3].classList.add("active");
@@ -202,8 +202,10 @@ function active_about(){
 
 // scroll up activer
 
+function scroll_up_activer(){
+
 const nav_links=document.querySelectorAll(".nav-link,.sidebar-link,.footer-link");
-console.log(nav_links);
+// console.log(nav_links);
 
 window.addEventListener("scroll",show_active_scroll_up);
 
@@ -211,7 +213,7 @@ function show_active_scroll_up(){
 
     let scrolly=window.scrollY;
 
-    console.log(scrolly)
+    // console.log(scrolly)
 
     let total_screen_num=window.innerWidth
 
@@ -227,7 +229,10 @@ function nav_array(){
 
 
 }
-    if( total_screen_num >= 992){
+
+//  only for  desktop above
+
+    if( total_screen_num >=992){
 
         
         // active home in navbar, sidebar ,footer 
@@ -268,7 +273,7 @@ function nav_array(){
     }
 
 
-        // active technology in navbar, sidebar ,footer 
+        // active packages in navbar, sidebar ,footer 
     
         if( scrolly>=989.0908813476562){
 
@@ -287,7 +292,7 @@ function nav_array(){
         }
 
 
-        // active contact in navbar, sidebar ,footer 
+        // active booking in navbar, sidebar ,footer 
 
         if( scrolly>=2070){
 
@@ -310,14 +315,76 @@ function nav_array(){
 }
 
 }
+}
+
+scroll_up_activer();
+
+
+// booking form 
+
+// adding js ,not to go back date
+
+function no_back_date_booking(){
+
+
+let date_input=document.getElementById("date");
+
+// console.log(date_input)
+
+date_input.addEventListener("click",no_back_date);
+
+
+let date=new Date();
+
+let full_year=date.getFullYear();
+
+let date_=date.getDate();
+
+let month_=date.getMonth()+1;
 
 
 
 
 
 
+function no_back_date(){
 
 
+    if(date_ < 10){
+
+        date_="0"+date_.toString();
+    
+        
+    }
+
+    if(month_< 10){
+        
+        month_="0"+month_.toString();
+    }
+
+
+    let full_date=full_year+"-"+month_+"-"+date_
+
+    // console.log(full_date)
+
+
+    date_input.setAttribute("min",full_date)
+
+
+    
+
+
+
+
+}
+
+
+
+
+}
+
+
+no_back_date_booking()
 
 
 
