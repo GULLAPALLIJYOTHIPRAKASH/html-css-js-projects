@@ -20,8 +20,8 @@ function gallery_slider(){
 //  console.log(right_btn);
 
  // added eventlistener  to left, right slider-button
- left_btn.addEventListener("click",goto_farward );
- right_btn.addEventListener("click",goto_backward );
+ left_btn.addEventListener("click",goto_backward );
+ right_btn.addEventListener("click",goto_farward );
 
 
  // all images in arrays
@@ -121,3 +121,5 @@ let   count=0;
 }
 
 gallery_slider();
+
+
