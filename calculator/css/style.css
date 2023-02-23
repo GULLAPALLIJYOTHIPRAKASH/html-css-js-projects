@@ -1,0 +1,139 @@
+
+
+/* global styles */
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#FEFCFF;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1250px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+
+/* calculator styles */
+
+.calculator-container{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px 0.5px ;
+    
+
+}
+
+
+
+.calculator-container .calculator-result{
+    max-width: 303px;
+    background-color: burlywood;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: auto;
+    
+}
+
+.calculator-container .calculator-buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.calculator-buttons .calculator-row{
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+}
+
+.calculator-row button{
+    width: 75px;
+    height: 75px;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 0 0 0 0;
+    cursor: pointer;
+}
+
+.calculator-row button:hover{
+    background-color: gainsboro;
+
+
+}
+
+.calculator-row :active{
+    transform: scale(0.92);
+}
+
+#dot{
+
+    font-weight: 600;
+}
+
+#equal{
+    width: 150px;
+}
+
+.header{
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.header .title{
+    color: #59a2e3;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 1px 1px 11px;
+}
+
+.header .underline{
+
+    width: 100px;
+    height: 5px;
+    background-color: #59a2e3;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+
+}
