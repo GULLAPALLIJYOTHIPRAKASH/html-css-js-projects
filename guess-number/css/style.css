@@ -1,0 +1,154 @@
+/* global styles */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    /* outline-width: 2px; */
+    outline-color: #10aee8;
+}
+
+.wrapper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:20px ;
+    padding-right: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: inline-block;
+}
+
+/* guess number styles */
+
+ .guess-number-container{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 1px 1px 11px 5px;
+    padding:30px; 
+
+} 
+
+.guess-number-container .guess-number-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+
+
+ .heading-section .title{
+    font-size: 20px;
+    color: #3777aa;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1px;
+    
+ }
+
+.guess-number-forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-input{
+    width:220px;
+    height: 35px;
+    color: rgb(59, 233, 24);
+    padding:15px 5px;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: capitalize;
+    border: 2px solid rgb(186, 229, 242);
+    border-radius: 2px;
+    margin-right: 5px;
+    
+}
+
+.guess-btn{
+    font-size: 16px;
+    color:#3777aa;
+    background-color: white;
+    border: 2px solid rgb(10, 170, 239);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center ;
+    padding:6px 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    
+
+}
+
+.guess-btn:hover{
+    background-color: #3777aa;
+    color: white;
+    border-color:#3777aa;
+}
+
+.guess-btn:active{
+    transform: scale(0.92);
+}
+
+
+.result-container{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s linear;
+    border: none;
+    display: none;     
+   
+}
+
+.result-container img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-position: center;
+    border-radius:10px ;
+   
+}
+
+/* js */
+
+.heading-section .title-color{
+
+    color:black;
+    background-color:rgb(248, 106, 125);
+    
+}
+
+.show{
+
+    display: block;
+}
