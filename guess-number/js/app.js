@@ -22,7 +22,7 @@ function guessing_number(){
     // console.log(title_message)
 
     // generate a random  number
-      var random_num=Math.floor(Math.random()*1001);
+      var random_num=Math.floor(Math.random()*11);
     // console.log(random_num)
 
 
@@ -48,10 +48,10 @@ function guessing_number(){
     function show_result(){
 
         // if user input is empty
-        if(input_number.value==""){
+        if(input_number.value=="" || input_number.value>11 ){
 
             // set the title  to display the text and color
-            title_message.innerText="please enter number";
+            title_message.innerText="please enter number between 0-10 ";
             title_message.classList.add("title-color");
             result_container.classList.remove("show");
 
