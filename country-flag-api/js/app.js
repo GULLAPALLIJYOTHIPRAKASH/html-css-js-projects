@@ -58,6 +58,8 @@ function show_flag(){
                 // store object in variable country like destruction
                 let [country]=result
 
+                console.log(country);
+
                 // add result in img format
                 country_result.innerHTML=`<img src="${country.flags.png}" class="flag-img" alt="${country.flags.alt}">`
 
