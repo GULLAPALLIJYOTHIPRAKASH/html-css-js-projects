@@ -1,5 +1,6 @@
 // country api function
 function country_api(){
+
 // input text,btn
 let country_name=document.getElementById("country-name");
 let bt1=document.querySelector(".country-btn");
@@ -15,7 +16,7 @@ bt1.addEventListener("click",show_flag);
 // function to show the flag
 function show_flag(){
 
-    if( country_name.value=="india"){
+    if(country_name.value=="india"){
 
         country_name.value='bharat'
         
