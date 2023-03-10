@@ -154,10 +154,11 @@ ul{
 .country-result{
     margin-top: 20px;
     /* border: 2px solid; */
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* padding: 20px; */
+    align-items: center; */
+    padding: 20px;
 }
 
 .loader{

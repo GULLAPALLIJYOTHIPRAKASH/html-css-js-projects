@@ -15,12 +15,25 @@ bt1.addEventListener("click",show_flag);
 // function to show the flag
 function show_flag(){
 
+    if( country_name.value=="india"){
+
+        country_name.value='bharat'
+        
+    }
+    else if(country_name.value=="america"){
+
+        country_name.value='usa'
+
+    }
+    else{
+
+        country_name=country_name
+    }
     // store the user country_name in value
     let value=country_name.value
 
     // create object for XMLHttpRequest()
     let xhr=new XMLHttpRequest()
-
     // create request for object
     xhr.open("GET",`https://restcountries.com/v3.1/name/${value}`,true )
 
@@ -57,12 +70,24 @@ function show_flag(){
 
                 // store object in variable country like destruction
                 let [country]=result
+                // console.log(country);
+                
+                // store country language converted  object into array into string
+                let language=Object.values(country.languages).toString()
+                // console.log(language);
 
-                console.log(country);
+                // store country currency  like desctruction 
+                let [currency]=Object.values(country.currencies)
+                // console.log(currency.name);
+                // console.log(currency.symbol);
 
                 // add result in img format
-                country_result.innerHTML=`<img src="${country.flags.png}" class="flag-img" alt="${country.flags.alt}">`
-
+                country_result.innerHTML=`<img src="${country.flags.png}" class="flag-img" alt="${country.flags.alt}">
+                <p class=country-info>Capital: ${country.capital}</p>
+                <p class=country-info>Continents: ${country.continents} 
+                <p class=country-info>languages: "${language}"</p>
+                <p class=country-info>currency: ${currency.name} (${currency.symbol})</p>
+                <p class=country-info>population: ${country.population}</p>`
                 }
 
                 // if user entered value is null then
