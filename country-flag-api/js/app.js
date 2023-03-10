@@ -27,7 +27,7 @@ function small_change(){
     }
     else{
 
-        country_name=country_name
+        country_name.value=country_name.value
     }
 }
 
@@ -35,6 +35,8 @@ function small_change(){
 function show_flag(){
 
     small_change();
+
+    console.log(country_name.value);
     
     // store the user country_name in value
     let value=country_name.value
