@@ -94,7 +94,6 @@ function show_flag(){
 
                 // add result in img format
                 country_result.innerHTML=`<img src="${country.flags.png}" class="flag-img" alt="${country.flags.alt}">
-                <p class=country-info>Name*** ${value}</p>
                 <p class=country-info>Capital: ${country.capital}</p>
                 <p class=country-info>Continents: ${country.continents} 
                 <p class=country-info>languages: "${language}"</p>
