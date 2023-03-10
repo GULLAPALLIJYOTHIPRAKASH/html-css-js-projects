@@ -72,15 +72,15 @@ function show_flag(){
                 // console.log(result)
 
                 // store object in variable country like destruction
-                let [country]=result
+                let [country]=result;
                 // console.log(country);
                 
                 // store country language converted  object into array into string
-                let language=Object.values(country.languages).toString()
+                let language=Object.values(country.languages).toString();
                 // console.log(language);
 
                 // store country currency  like desctruction 
-                let [currency]=Object.values(country.currencies)
+                let [currency]=Object.values(country.currencies);
                 // console.log(currency.name);
                 // console.log(currency.symbol);
 
