@@ -36,12 +36,12 @@ function show_flag(){
 
     small_change();
 
-    console.log(country_name.value);
+    // console.log(country_name.value);
     
     // store the user country_name in value
     let value=country_name.value
 
-    console.log(value);
+    // console.log(value);
 
     // create object for XMLHttpRequest()
     let xhr=new XMLHttpRequest()
