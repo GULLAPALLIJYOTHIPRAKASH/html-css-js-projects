@@ -3,15 +3,15 @@ function country_api(){
 
 // input text,btn
 let country_name=document.getElementById("country-name");
-let bt1=document.querySelector(".country-btn");
-let country_result=document.querySelector(".country-result")
+let search=document.querySelector(".country-btn");
+let country_result=document.querySelector(".country-result");
 
 // console.log(country_name);
 // console.log(bt1);
 // console.log(country_result);
 
 // add event to submit btn
-bt1.addEventListener("click",show_flag);
+search.addEventListener("click",show_flag);
 
 // function to show the flag
 function show_flag(){
@@ -33,10 +33,12 @@ function show_flag(){
     // store the user country_name in value
     let value=country_name.value
 
+    console.log(value);
+
     // create object for XMLHttpRequest()
     let xhr=new XMLHttpRequest()
     // create request for object
-    xhr.open("GET",`https://restcountries.com/v3.1/name/${value}`,true )
+    xhr.open(`GET`,`https://restcountries.com/v3.1/name/${value}`,true )
 
     // send request
     xhr.send();
@@ -84,6 +86,7 @@ function show_flag(){
 
                 // add result in img format
                 country_result.innerHTML=`<img src="${country.flags.png}" class="flag-img" alt="${country.flags.alt}">
+                <p class=country-info>Name*** ${value}</p>
                 <p class=country-info>Capital: ${country.capital}</p>
                 <p class=country-info>Continents: ${country.continents} 
                 <p class=country-info>languages: "${language}"</p>
@@ -94,14 +97,14 @@ function show_flag(){
                 // if user entered value is null then
                 else if(value==""){
 
-                    country_result.innerHTML="<p>please enter any country</p>"
+                    country_result.innerHTML="<p style='text-align:center' >please enter any country</p>"
 
                 }
 
                 // if user entered  country name  is wrong  
                 else{
 
-                    country_result.innerHTML="<p>please enter correct country name</p>"
+                    country_result.innerHTML="<p style='text-align:center'>please enter correct country name</p>"
 
 
                 }
