@@ -2,7 +2,7 @@
 function country_api(){
 
 // input text,btn
-let country_name=document.getElementById("country-name");
+var country_name=document.getElementById("country-name");
 let search=document.querySelector(".country-btn");
 let country_result=document.querySelector(".country-result");
 
@@ -13,9 +13,8 @@ let country_result=document.querySelector(".country-result");
 // add event to submit btn
 search.addEventListener("click",show_flag);
 
-// function to show the flag
-function show_flag(){
 
+function small_change(){
     if(country_name.value=="india"){
 
         country_name.value='bharat'
@@ -30,6 +29,13 @@ function show_flag(){
 
         country_name=country_name
     }
+}
+
+// function to show the flag
+function show_flag(){
+
+    small_change();
+    
     // store the user country_name in value
     let value=country_name.value
 
