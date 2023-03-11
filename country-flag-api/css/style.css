@@ -214,3 +214,22 @@ border-top:10px solid #3777aa ;
 /* .country-result .flag-img{
 border:3px solid rgb(235, 166, 166) ;
 } */
+
+.copy-right{
+
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(-95deg, #eaa8948e, #ee98b976, #b0daea, #bceec7);
+    /* background-repeat: no-repeat; */
+	background-size: 400% 400%;
+	animation-name: changer;
+    animation-duration: 15s;
+     animation-timing-function:linear;
+     animation-iteration-count:  infinite;
+    color: black;
+    padding: 2px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+}
