@@ -354,5 +354,19 @@ justify-content: center;
 }
 
 
+.copy-right{
+
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgba(206, 211, 107, 0.573);
+    color: black;
+    padding: 2px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+
+
 
 
