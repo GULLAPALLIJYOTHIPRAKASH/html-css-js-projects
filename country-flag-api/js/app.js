@@ -77,11 +77,11 @@ function show_flag(){
                 // make empty to remove loader and display the result
                 country_result.innerHTML=""
 
-                console.log(result)
+                // console.log(result)
 
                 // store object in variable country like destruction
                 let [country]=result;
-                console.log(country);
+                // console.log(country);
                 
                 // store country language converted  object into array into string
                 let language=Object.values(country.languages).toString();

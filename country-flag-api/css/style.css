@@ -117,14 +117,17 @@ ul{
     min-height: 20px;
     font-size: 20px;
     color: black;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 1px;
     padding:  5px;
     border: 2px solid gainsboro;
     border-radius:5px ;
     background-color: white;
 }
+.country-form ::placeholder{
+    text-transform: capitalize;
 
+}
 
 .country-form  .country-btn{
 
