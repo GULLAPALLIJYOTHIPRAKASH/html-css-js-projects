@@ -36,6 +36,32 @@ img{
     display: inline-block;
 }
 
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #d2a4968e;
+    /* background-repeat: no-repeat; */
+	/* animation-name: changer_1;
+    animation-duration: 15s;
+     animation-timing-function:ease;
+     animation-iteration-count:  infinite; */
+}
+
+/* 
+@keyframes changer_1 {
+
+    0% {
+		background-color:#8b8c728e;
+	}
+	50% {
+		background-color: #f4e0c6;
+	}
+	100% {
+		background-color: #99b9a5;
+	}
+} */
+
+
+
 /* guess number styles */
 
  .guess-number-container{ 
@@ -151,4 +177,39 @@ img{
 .show{
 
     display: block;
+}
+
+
+/* copy rights */
+
+.copy-right{
+
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(-95deg, #eaa8948e, #ee98b976, #b0daea, #bceec7);
+    /* background-repeat: no-repeat; */
+	background-size: 400% 400%;
+	animation-name: changer;
+    animation-duration: 15s;
+     animation-timing-function:linear;
+     animation-iteration-count:  infinite;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+
+}
+@keyframes changer {
+
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
