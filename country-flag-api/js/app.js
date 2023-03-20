@@ -36,6 +36,7 @@ function show_flag(){
 
   
 
+    small_change()
     // console.log(country_name.value);
     
     // store the user country_name in value
