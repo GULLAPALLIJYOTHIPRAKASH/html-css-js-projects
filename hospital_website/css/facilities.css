@@ -1,0 +1,133 @@
+    /* facilities section styles */
+
+    .facilities-section-container{
+        width: 100%;
+        height: 100%;
+    }
+
+  
+    .facilities-section-center .heading-section .title{
+
+        font-size: 25px;
+        color: var(--black-clr);
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .facilities-section-center .heading-section .underline{
+
+        width: 100px;
+        min-height: 5px;
+        background-color: var(--light-blue);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
+    .single-facilities{
+
+        width: 100%;
+        height: 100%;
+        background-color: var(--white-clr);
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px 1px ;
+        transition: all 0.3s linear;
+    }
+
+    .single-facilities:hover{
+
+        transform: translateY(-4px);
+        box-shadow: 2px 2px 10px 1px ;
+
+    }
+
+
+
+    .facilities-section .img-container{
+        aspect-ratio: 350/250;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: all 0.3s linear ;
+        
+    }
+    
+    .facilities-section .img-container img{
+        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s linear ;
+    }
+
+    
+    .facilities-section .img-container:hover img{
+
+        transform: scale(1.2);
+    }
+
+     .facilities-section  .facilities-info{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+       
+        margin-bottom: 10px;
+     }
+
+     .facilities-info .facilities-type{
+
+        font-size: 20px;
+        color: var(--light-blue);
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 15px;
+        text-align: center;
+        
+     }
+
+     .facilities-info .facilities-desc{
+        font-size: 16px;
+        color: var(--black-clr);
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height:20px ;
+        text-align: center;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* word-break: break-all; */
+     }
+
+     .facilities-section-container .three-template-column{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+     }
+
+     @media screen and (min-width: 992px) {
+
+
+        .facilities-section-container .three-template-column{
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+     }
+
+        
+     }

@@ -1,0 +1,140 @@
+  /* treatment section styles */
+
+  .treatment-section-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-clr);
+}
+
+
+
+.treatment-section-center .heading-section .title{
+    font-size: 25px;
+    color: var(--black-clr);
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+.treatment-section-center .heading-section .underline{
+    width: 100px;
+    min-height: 5px;
+    background-color: var(--light-blue);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+}
+
+
+.treatment-section .single-treatment{
+   
+    border: 1px solid var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+   
+    
+}
+
+.treatment-section .single-treatment:hover{
+
+    transform: scale(0.92);
+    border-color: gray;
+    
+
+}
+
+
+
+
+
+.treatment-section .single-treatment .img-container{
+
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    /* margin-top:10px ; */
+}
+
+.treatment-section .single-treatment .img-container img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.single-treatment .treatment-name{
+    color: var(--black-clr);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+
+}
+
+
+@media screen and  (max-width: 350px) {
+
+    .treatment-section-container  .three-template-column{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+    } 
+    
+}
+@media screen and  (min-width: 351px){
+    .treatment-section-container .three-template-column{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+}
+
+.treatment-section .col-6{
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+
+    .treatment-section-container  .three-template-column{
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+    .treatment-section  .col-6{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+
+
+
+
+

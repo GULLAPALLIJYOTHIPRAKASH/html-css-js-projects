@@ -1,0 +1,171 @@
+  /* contact promotion styles */
+
+  .contact-promotion-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-clr);
+    position: relative;
+}
+
+
+
+
+
+.contact-promotion-center .heading-section .title{
+
+    font-size: 25px;
+    color: var(--black-clr);
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-promotion-center .heading-section .underline{
+
+    width: 100px;
+    min-height: 5px;
+    background-color: var(--light-blue);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.single-contact-promotion{
+
+    position: relative;
+}
+
+
+.contact-promotion  .img-container{
+    aspect-ratio: 380/410;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+
+    
+
+
+}
+
+.contact-promotion  .img-container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(11, 11, 11, 0.61);
+    z-index: 1;
+   
+   
+}
+
+.contact-promotion .img-container img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.contact-promotion .contact-promo-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+
+    
+}
+
+.contact-promotion .contact-promo-info .contact-promo-desc{
+
+    font-size: 16px;
+
+    color: var(--white-clr);
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+.contact-promotion .contact-promo-info  .button-container .contact-promo-btn{
+
+    width: 200px;
+    min-height: 45px;
+    background: linear-gradient(to left,#649bff,#3775e9,#0070fa);
+    font-size: 16px;
+    color: var(--white-clr);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+
+}
+
+.contact-promotion .contact-promo-info  .button-container .contact-promo-btn:hover{
+
+    background: linear-gradient(to right,  #649bff,#649bff,#0070fa);
+        
+        transition: all 0.3s linear;
+
+    
+}
+
+
+.contact-promotion .contact-promo-info  .button-container .contact-promo-btn:active{
+
+    transform: scale(0.92);
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .contact-promotion .img-container{
+    aspect-ratio: 1250/550;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+
+    
+}
+
+.contact-promotion .img-container img{
+   
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.contact-promotion .contact-promo-info .contact-promo-desc{
+
+    font-size: 40px;
+}
+
+    
+}
+
+
+

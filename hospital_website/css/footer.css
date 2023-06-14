@@ -1,0 +1,89 @@
+
+        
+        /* footer styles */
+        .footer-container{
+            width: 100%;
+            min-height: 150px;
+            background-color: #0d1820;
+        }
+
+        
+        .footer-container .footer-center{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-content .footer-social-link{
+            width: 30px;
+        }
+
+        .footer-container .footer-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            gap:20px ;
+
+            
+        }
+
+        .footer-content .footer-copyright p{
+            font-size: 16px;
+            color: var(--white-clr);
+            font-weight: 550;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            line-height: 30px;
+            text-align: center;
+
+        }
+
+        .footer-content .footer-social-links-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+
+         .footer-social-links-main .footer-social-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+         }
+         .footer-content .footer-social-link img{
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 5px;
+            transition: all 0.3s linear;
+        }
+
+        .footer-content .footer-social-link,.footer-content .footer-social-link img:hover{
+            transform: translateY(-4px);
+            border-color: var(--light-blue);
+        }
+
+        @media screen and (min-width: 992px) {
+
+
+              
+        .footer-container .footer-center{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+               .footer-container .footer-content{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+                align-items: center;
+
+               }
+        }

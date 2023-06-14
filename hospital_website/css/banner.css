@@ -1,0 +1,303 @@
+        /* banner styles */
+
+        .banner-section-container{
+            width: 100%;
+            height: 100%;
+        }
+    
+       
+        
+          .banner-section-center .img-component{
+    
+            aspect-ratio: 355/250;
+            overflow: hidden;
+    
+        }
+    
+        .img-component .img-container,.img-component .img-container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        } 
+    
+       .banner-section-center   .banner-section{
+            width: 100%;
+            min-height:250px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            background-color:#3777;
+            
+           
+          
+        }
+    
+       
+        
+    
+        .banner-section .banner-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 30px;
+        }
+    
+     
+        .banner-content  .banner-title{
+            color: #242429;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+    
+            }
+    
+       .banner-content .banner-desc{
+            color: #242429; 
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 30px;
+            
+         }
+
+         .banner-content .small-heading{
+            font-size: 18px;
+            color: #242429;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+         }
+    
+         .button-container .appointment-btn{
+            width: 250px;
+            min-height: 45px;
+            color: var(--white-clr);
+            background: linear-gradient(to left,#649bff,#3775e9,#0070fa);
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s linear;
+            margin-top: 10px;
+         }
+    
+         .button-container .appointment-btn:hover{
+            
+            background: linear-gradient(to right,  #649bff,#649bff,#0070fa);
+            
+            transition: all 0.3s linear;
+    
+        }
+    
+        .button-container .appointment-btn:active{
+    
+            transform: scale(0.92);
+        }
+
+        @media screen and  (min-width: 750px) {
+                
+            .banner-section-container{
+                position: relative;
+            }
+    
+    
+    
+    
+            .banner-section-center   .img-component{
+    
+                        aspect-ratio: 1990/870;
+                        overflow: hidden;
+                        position: relative;            
+            }
+    
+            .home-page   .banner-section-center  .img-component{
+    
+                    aspect-ratio: 1080/600;
+                    overflow: hidden;
+                    position: relative;
+            }
+    
+            .img-component .img-container ,.img-component .img-container img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+               
+            
+            } 
+    
+        .banner-section-container  .img-component::before{
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(22, 22, 22, 0.3);
+        }
+    
+         
+        .banner-section-center .banner-section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: transparent;
+            
+        }
+    
+       
+    
+        .banner-content .banner-title{
+            font-size: 45px;
+            color: var(--white-clr);
+        }
+    
+       
+    
+        .banner-content .banner-desc{
+            font-size: 20px;
+            color: var(--white-clr);
+            word-break: break-all;
+    
+    
+        }
+
+        .banner-content .small-heading{
+
+            font-size: 30px;
+            color: var(--white-clr);
+        }
+    
+        .button-container .appointment-btn{
+    
+            animation-name: bounce;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+    
+        @keyframes bounce {
+    
+            0%{
+    
+                transform: scale(0.5);
+    
+            }
+    
+            100%{
+                transform: scale(1.0);
+            }
+            
+        }
+
+        }
+           
+        @media screen and  (min-width: 992px) {
+    
+/*     
+            .banner-section-container{
+                position: relative;
+            }
+    
+    
+    
+    
+            .banner-section-center   .img-component{
+    
+                        aspect-ratio: 1990/870;
+                        overflow: hidden;
+                        position: relative;            
+            }
+    
+            .home-page   .banner-section-center  .img-component{
+    
+                    aspect-ratio: 1080/600;
+                    overflow: hidden;
+                    position: relative;
+            }
+    
+            .img-component .img-container ,.img-component .img-container img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            
+            } 
+    
+        .banner-section-container  .img-component::before{
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(22, 22, 22, 0.3);
+        }
+    
+         
+        .banner-section-center .banner-section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: transparent;
+            
+        }
+     */
+       
+    
+        .banner-content .banner-title{
+            font-size: 60px;
+            color: var(--white-clr);
+        }
+    
+       
+    
+        .banner-content .banner-desc{
+            font-size: 25px;
+            color: var(--white-clr);
+    
+    
+        }
+
+        .banner-content .small-heading{
+
+            font-size: 40px;
+            color: var(--white-clr);
+        }
+    
+        /* .button-container .appointment-btn{
+    
+            animation-name: bounce;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+    
+        @keyframes bounce {
+    
+            0%{
+    
+                transform: scale(0.5);
+    
+            }
+    
+            100%{
+                transform: scale(1.0);
+            }
+            
+        } */
+    
+    
+    
+        }

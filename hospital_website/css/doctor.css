@@ -1,0 +1,216 @@
+    /* doctor section styles */
+
+    .doctor-section-container{
+        width: 100%;
+        height: 100%;
+        background-color: var(--white-clr);
+        
+
+    }
+
+    .doctor-section-center .heading-section .title{
+
+        font-size: 25px;
+        color: var(--black-clr);
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .doctor-section-center{
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .doctor-section-center .heading-section .underline{
+
+        width: 100px;
+        min-height: 5px;
+        background-color: var(--light-blue);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
+    .single-doctor{
+
+        width: 100%;
+        height: 100%;
+        background-color: var(--white-clr);
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px 1px ;
+        transition: all 0.3s linear;
+    }
+
+    .single-doctor:hover{
+
+        box-shadow: 2px 2px 10px 1px ;
+        transform: translateY(-4px);
+
+    }
+
+    .single-doctor .img-container{
+
+        aspect-ratio: 350/350;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        position: relative;
+    }
+
+
+    .single-doctor .img-container .doctor-img{
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s linear;
+        position: relative;
+    }
+
+    .single-doctor .img-container:hover .doctor-img{
+
+        transform: scale(1.3) ;
+    }
+
+    .single-doctor .doctor-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* background-color: aquamarine; */
+    }
+
+    .doctor-info .doctor-name{
+
+        font-size: 20px;
+        color: var(--light-blue);
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+    }
+
+      .doctor-info .doctor-qualification{
+
+        font-size: 16px;
+        color: var(--black-clr);
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+      }
+
+      .doctor-info .doctor-desc{
+
+        font-size: 16px;
+        color: var(--black-clr);
+        font-weight: bold;
+        text-align: center;
+        line-height: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+      }
+
+      .doctor-section-container .three-template-column{
+        display: grid;
+        grid-template-columns: repeat(1,fr);
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      @media screen and (min-width: 992px) {
+
+        .doctor-section-container .three-template-column{
+
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+      }
+
+
+      .button-container .doctor-btn{
+
+        width: 200px;
+        min-height: 45px;
+        font-size: 20px;
+        color: var(--white-clr);
+        background: linear-gradient(to left,#649bff,#3775e9,#0070fa);
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+      }
+
+      .button-container .doctor-btn:hover{
+        background: linear-gradient(to right,  #649bff,#649bff,#0070fa);
+
+
+      }
+
+      .button-container .doctor-btn:active{
+
+        transform: scale(0.92);
+      }
+
+      .single-doctor .doctor-social-links{
+        position: absolute;
+        
+        left: 50%;
+        /* bottom: 0; */
+        transform: translate(-50% , 50%);
+
+        background-color: rgb(148, 145, 145);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        padding:10px ; 
+        width: 100%;  
+        transition: all 0.3s linear;
+        opacity: 0;
+
+      }
+
+      .single-doctor .img-container:hover   .doctor-social-links{
+
+        bottom: 0;
+        opacity: 1;
+      }
+
+      .img-container .doctor-social-links>a>img{
+        width: 30px;
+        height: 30px;
+
+        transition: all 0.3s linear;
+        
+        
+        
+      }
+
+      .img-container .doctor-social-links>a>img:hover{
+
+        transform: translateY(-4px);
+      }

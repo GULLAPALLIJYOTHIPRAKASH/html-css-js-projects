@@ -1,0 +1,250 @@
+ /* about section styles */
+
+ .about-section-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-clr);
+   
+}
+
+.about-section-center .heading-section .title{
+
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.about-section-center .heading-section .underline{
+
+    width: 100px;
+    height: 5px;
+    background-color: var(--light-blue);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.about-section .about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.about-content .img-container{
+    aspect-ratio: 355/350;
+    overflow: hidden;
+   
+}
+
+.about-content .img-container img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-info .about-desc{
+
+    color: var(--black-clr);
+    font-size: 18px;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 30px;
+    text-align: left;
+    word-break: break-all;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp:6;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+
+}
+
+.about-info  .button-container .about-btn{
+    width: 170px;
+    min-height: 45px;
+    color: var(--white-clr);
+    background: linear-gradient(to left,#649bff,#3775e9,#0070fa);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 1px;
+    border:none ;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info  .button-container .about-btn:hover{
+
+    background: linear-gradient(to right,  #649bff,#649bff,#0070fa);
+        
+    transition: all 0.3s linear;
+}
+
+@media screen and (max-width:350px) {
+
+    .about-info .about-info-icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+
+    }
+    
+}
+
+.about-info .about-info-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex:1 0 33.3%; */
+    
+    margin-top: 20px;
+    /* border: 2px solid red; */
+
+
+}
+
+.about-info-icons .icon-container{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 1s linear;
+   
+
+}
+
+.about-info-icons .icon-container:hover{
+ 
+
+    transform: rotateY(180deg);
+}
+
+.about-info-icons .icon-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.about-info-icons .icon-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.about-info-icons .icon-info .icon-desc{
+
+    color: var(--black-clr);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+@media screen and (min-width:992px) {
+
+    .about-content .img-container{
+    aspect-ratio: 250/250;
+    overflow: hidden;
+    /* border: 2px solid red; */
+   
+}
+
+.about-content .img-container img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.about-section .about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+    .about-content .about-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* border: 2px solid red; */
+        /* background-color: aquamarine; */
+        gap: 30px;
+        
+    }
+
+     .about-info .about-desc{
+
+        display: -webkit-box;
+    -webkit-line-clamp:10;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+        
+     }
+
+     .about-info .about-info-icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid greenyellow; */
+        gap: 120px;
+     }
+
+
+     .about-info-icons .icon-container{
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+   
+
+}
+
+.about-info-icons .icon-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.about-info-icons .icon-info .icon-desc{
+
+    font-size: 20px;
+}
+
+
+    
+
+
+
+
+    
+}
+
