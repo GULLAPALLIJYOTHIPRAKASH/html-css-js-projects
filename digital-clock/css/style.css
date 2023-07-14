@@ -1,0 +1,388 @@
+
+
+/* global styles */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+*,::after,::before{
+
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline-color: rgb(214, 185, 185);
+    outline-width: 2px;
+}
+
+.wrapper{
+
+    max-width: 1250px;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-container{
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:linear-gradient(to left,#08001f, #5c41b8); 
+            
+}
+
+
+/* padding classes */
+@media screen and (max-width: 991px) {
+.paddingTopMobile-ten {
+padding-top: 10px !important;
+}
+.paddingTopMobile-twenty {
+padding-top: 20px !important;
+}
+.paddingTopMobile-thirty {
+padding-top: 30px !important;
+}
+.paddingTopMobile-forty {
+padding-top: 40px !important;
+}
+.paddingTopMobile-fifty {
+padding-top: 50px !important;
+}
+.paddingBottomMobile-ten {
+padding-bottom: 10px !important;
+}
+.paddingBottomMobile-twenty {
+padding-bottom: 20px !important;
+}
+.paddingBottomMobile-thirty {
+padding-bottom: 30px !important;
+}
+.paddingBottomMobile-forty {
+padding-bottom: 40px !important;
+}
+.paddingBottomMobile-fifty {
+padding-bottom: 50px !important;
+}
+}
+@media screen and (min-width: 992px) {
+.paddingTopDesktop-ten {
+padding-top: 10px !important;
+}
+.paddingTopDesktop-twenty {
+padding-top: 20px !important;
+}
+.paddingTopDesktop-thirty {
+padding-top: 30px !important;
+}
+.paddingTopDesktop-forty {
+padding-top: 40px !important;
+}
+.paddingTopDesktop-fifty {
+padding-top: 50px !important;
+}
+.paddingTopDesktop-sixty {
+padding-top: 60px !important;
+}
+.paddingTopDesktop-seventy {
+padding-top: 70px !important;
+}
+.paddingTopDesktop-eighty {
+padding-top: 80px !important;
+}
+.paddingTopDesktop-ninety {
+padding-top: 90px !important;
+}
+.paddingTopDesktop-hundred{
+padding-top: 100px !important;
+}
+.paddingBottomDesktop-ten {
+padding-bottom: 10px !important;
+}
+.paddingBottomDesktop-twenty {
+padding-bottom: 20px !important;
+}
+.paddingBottomDesktop-thirty {
+padding-bottom: 30px !important;
+}
+.paddingBottomDesktop-forty {
+padding-bottom: 40px !important;
+}
+.paddingBottomDesktop-fifty {
+padding-bottom: 50px !important;
+}
+.paddingBottomDesktop-sixty {
+padding-bottom: 60px !important;
+}
+.paddingBottomDesktop-seventy {
+padding-bottom: 70px !important;
+}
+.paddingBottomDesktop-eighty {
+padding-bottom: 80px !important;
+}
+.paddingBottomDesktop-ninety {
+padding-bottom: 90px !important;
+}
+.paddingBottomDesktop-hundred {
+padding-bottom: 100px !important;
+}
+}
+
+
+/* digital clock container  styles */
+
+.clock-container{
+
+    width: 100%;
+    min-height: 100vh;
+       
+    color: #fff;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+
+
+}
+
+.clock-center{
+    width: 80vw;
+    max-width: 800px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 2px solid red; */
+    
+}
+
+.clock-section{
+
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 0, 255, 0.11);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px ;
+    backdrop-filter: blur(40px);
+    gap: 15px;
+}
+
+.clock-center::before{
+
+    content: " ";
+    width: 90px;
+    height: 90px;
+    background-color: #7373d6;
+    position: absolute;
+    top:-25px;
+    left: -15px;
+    z-index: -1;
+    border-radius: 5px;
+    animation-name: move-one ;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+   
+
+    
+}
+
+
+@keyframes move-one {
+
+         0%{
+
+        
+            transform: translateX(100px);
+            
+            
+        }
+
+        100%{
+
+            transform: translateX(-10px);
+        
+            
+            
+        } 
+}
+
+.clock-center::after{
+
+    content: " ";
+    width: 90px;
+    height: 90px;
+    background-color: #73d685;
+    position: absolute;
+    bottom: -25px;
+    right: -15px;
+    z-index: -1;
+    border-radius: 50%;
+
+    animation-name:move-two ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count:2 ;
+    animation-direction: alternate;
+    animation-fill-mode:backwards;
+
+}
+
+
+
+
+@keyframes move-two {
+
+    0%{
+
+      
+        transform: translateX(10px);
+        
+        
+    }
+    
+    100%{
+
+        transform: translateX(-100px);
+       
+        
+        
+    }
+}
+
+
+
+
+
+.clock-section .clock-hours,  .clock-section .clock-minutes,   .clock-section .clock-seconds{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    /* width: 100px; */
+   
+    
+}
+
+#hours,#minutes,#seconds,.clock-colon, #time{
+
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.clock-colon{
+
+    margin-bottom: 30px;
+}
+
+#hour-title, #minutes-title, #seconds-title{
+
+   font-size: 25px;
+   margin-top: -10px;
+   box-sizing: border-box;
+}
+
+
+.copy-right{
+
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 30px;
+    word-break: keep-all;
+    margin-top: 60px;
+
+}
+
+
+@media screen and (min-width : 792px) {
+
+
+    .clock-section{
+
+        gap: 30px;
+    }
+
+
+    .clock-center::before{
+
+    content: " ";
+    width: 150px;
+    height: 150px;
+    background-color: #7373d6;
+    position: absolute;
+    top:-50px;
+    left: -50px;
+    z-index: -1;
+    border-radius: 5px;
+    }
+
+    .clock-center::after{
+
+    content: " ";
+    width: 150px;
+    height: 150px;
+    background-color: #73d685;
+    position: absolute;
+    bottom: -50px;
+    right: -30px;
+    z-index: -1;
+    border-radius: 50%;
+
+    }
+
+    #hours,#minutes,#seconds,.clock-colon, #time{
+
+        font-size: 75px;
+        letter-spacing: 2px;
+    }
+
+
+
+
+
+}
