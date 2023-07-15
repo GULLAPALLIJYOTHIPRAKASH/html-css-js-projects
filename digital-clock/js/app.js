@@ -24,13 +24,31 @@
 
     let date=new Date();
 
-    // new array for 24 hours
+    // new array for 24 hours ---- not used -----
 
-    let hours_24=[0,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12];
+    // let hours_24=[0,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12];
 
     // converted  24 hours  into 12 hours  and  to check the values hour is < 10 then add 0 hour like  01 ,02,03
 
-    let d_hours=hours_24[date.getHours()]  < 10  ? `0${hours_24[date.getHours()] }` : `${hours_24[date.getHours()]}` ;
+    // let d_hours=hours_24[date.getHours()]  < 10  ? `0${hours_24[date.getHours()] }` : `${hours_24[date.getHours()]}` ;
+
+    // this condition helps to find  if hours is > 12   and else <=12
+    let d_hours;
+
+    if(date.getHours() > 12){
+
+      d_hours=date.getHours() -12  < 10 ? `0${date.getHours()-12}` : `${date.getHours()-12}` ;
+
+
+
+    }
+
+    else{
+
+      d_hours=date.getHours()   < 10 ? `0${date.getHours()}` : `${date.getHours()}` 
+
+
+    }
 
     // console.log(d_hours);
 
@@ -50,7 +68,7 @@
     
     // to get the AM or PM when time is <= 11
     
-    let d_time_indicator= hours_24[date.getHours()]  >= 11 ? 'AM' : 'PM';
+    let d_time_indicator= date.getHours()  <= 11 ? 'AM' : 'PM';
     
     // console.log(d_time_indicator);
 
