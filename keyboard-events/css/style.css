@@ -1,0 +1,154 @@
+
+
+/* global styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.text-center{
+
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+/* keyboard-event styles */
+
+.keyboard-event-container{
+
+    width: 100%;
+    height: 100vh;
+    /* border:2px solid red; */
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgba(231, 228, 228, 0.525); 
+    position: relative;
+}
+
+.keyboard-event-container .keyboard-event-center{
+
+ 
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.keyboard-event-center .btn{
+
+    min-width: 200px;
+    min-height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.789);
+ 
+
+}
+
+.keyboard-event-center .keyboard-section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.keyboard-section .event-key{
+
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+
+}
+
+.keyboard-section .event-key .title{
+
+    font-size: 20px;
+    color: rgb(65, 64, 64);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.keyboard-section .event-key .key-type{
+
+    width: 250px;
+    min-height: 70px;
+    border: 2px solid rgb(203, 203, 203);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* padding: 20px; */
+    /* text-align: center; */
+    background-color: rgba(221, 215, 215, 0.454);      
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+.copy-right{
+
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media screen and (min-width: 782px) {
+
+    .keyboard-event-center .keyboard-section{
+
+        flex-direction: row;
+    }
+    
+}
