@@ -1,0 +1,329 @@
+
+
+/* global styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* *:focus{
+
+    outline-width: 2px;
+    outline-color: #3737AA;
+    transition: all 0.3s linear;
+} */
+
+ul{
+
+    list-style-type: none;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+.wrapper{
+
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+body{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(228, 255, 218);
+
+}
+
+
+
+/* githud user styles */
+
+.githud-user-container{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.githud-user-center{
+
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-bottom: 50px;
+}
+
+.githud-user-form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.githud-user-form .username{
+
+    width: 80vw;
+    max-width: 800px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 10px;
+    outline: none;
+    background-color: rgb(40, 46, 49);
+    color: white;
+   
+}
+
+.githud-user-form .username::placeholder{
+
+    color: white;
+}
+
+.search-btn{
+
+    font-size: 30px;
+    font-weight:bold;
+    color:white ;
+    background-color: rgb(40, 46, 49);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    /* border: 2px solid green; */
+
+
+}
+
+.search-btn:hover{
+
+    background-color:rgb(26, 35, 40) ;
+}
+
+.githud-result{
+
+    width: 90vw;
+    max-width: 800px;
+    min-height: 250px;
+    border-radius: 20px;
+    background-color: rgb(19, 31, 43);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ 
+   
+}
+
+
+
+.githud-result  .img-container{
+
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    border: 10px solid rgb(232, 232, 232);
+}
+
+/* .githud-result  .img-container img{
+
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+} */
+
+
+.githud-result .githud-info{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+    .main{
+
+    display: none;
+
+    }
+
+
+.visible{
+
+   display: block;
+}
+
+
+
+.githud-result .githud-info .user-name{
+
+    font-size: 22px;
+    /* color: rgb(43, 41, 62); */
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 30px;
+   
+
+}
+
+.githud-result .githud-info .about-user{
+
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-break: break-all;
+    line-height: 25px;
+}
+
+.githud-result  .user-follow{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.githud-user-center .copy-right{
+
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(51, 59, 81);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 35px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hide{
+
+display: none;
+}
+
+.button-container{
+
+    margin: 10px 0;
+}
+
+.button-container .button-link{
+
+    width: 150px;
+    min-height: 45px;
+    font-size: 25px;
+    color: rgb(19, 31, 43);
+    background-color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    
+}
+
+.button-container .button-link:hover{
+
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+.button-container .button-link:active{
+
+    transform: scale(0.92);
+}
+
+@media screen  and ( min-width : 789px) {
+
+    .githud-result{
+        display: flex;
+    flex-direction: row;   
+    }
+
+
+
+        .githud-result .githud-info{
+
+            margin-left: 25px;
+            padding: 15px;
+
+        }
+
+        .githud-result .githud-info .user-name{
+
+            text-align: left;
+            margin-top: 0;
+
+            
+        }
+
+        .githud-result  .user-follow{
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        }
+
+        /* .githud-result  .img-container{
+
+        width: 400px;
+        height: 180px;
+    
+        }
+
+        .githud-result  .img-container img{
+
+        width: 100%;
+        height: 100%;
+        } */
+
+        .githud-user-center .copy-right{
+
+            font-size: 20px;
+        }
+
+
+
+
+    
+}
