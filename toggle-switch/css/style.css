@@ -1,0 +1,343 @@
+
+
+/* global styles */
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        *,::after,::before{
+
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .wrapper{
+
+            max-width: 1250px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* toggle-switch styles */
+
+        .toggle-switch-container{
+
+            width: 100%;
+            min-height: 100vh;
+            /* border: 2px solid  red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(21, 21, 55, 0.539);
+            background-color:rgba(29, 29, 55, 0.582);;
+            background-color:#ccc;
+            transition: all 0.3s linear;
+            
+        }
+
+        .toggle-switch-center{
+
+            /* border: 2px solid greenyellow; */
+            width: 90vw;
+            max-width: 400px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            /* box-shadow:  31px 31px 63px #a4a4a4,
+             -31px -31px 63px #ffffff; */
+             padding: 15px;
+             background-color: #fff;
+            color: rgb(21, 21, 55);
+
+        }
+        .heading-section{
+
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .heading-section .time{
+
+            font-size: 16px;
+            
+        }
+
+        .heading-section    .shape{
+
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .shape .battery{
+
+            width: 25px;
+            height: 10px;
+            /* background-color: rgb(150, 150, 159); */
+            background-color:rgba(21, 21, 55, 0.66);
+            border-radius: 2px;
+        }
+        .shape .network{
+
+            width: 15px;
+            height: 10px;
+            /* background-color: grey; */
+            background-color:  rgb(150, 150, 159);
+            background-color:  rgba(21, 21, 55, 0.702);
+            border-top-left-radius: 15px;
+            transform: rotate(-270deg);
+            
+        }
+        .toggle-switch-section{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+          .content{
+
+            width: 150px;
+            height: 150px;
+            /* border: 2px solid  red; */
+            border-radius: 50%;
+            background:  linear-gradient(310deg, #ff0094 -38% -38%, #ffec00 100%);
+            /* background:      radial-gradient(
+                farthest-corner circle at 100% 0%, 
+                #00dfff 0%, #8c00ea 100%
+                ); 
+                
+            background:  linear-gradient(-30deg, #00dfff 0%, #8c00ea 100%);*/
+            position: relative;
+
+           
+        }
+
+        .toggle-switch-section   .round{
+
+            /* display: none; */
+
+            display: block;
+            width: 120px;
+            height: 120px;
+            /* background-color: rgb(130, 74, 74); */
+            background-color: white;     
+            position: absolute;
+            top: -30%;
+            left: 100%;
+            border-radius: 50%;
+        
+            animation-name: moon-hide;
+            animation-timing-function:linear;
+            animation-duration: 0.3s;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+            transition: all 0.3s linear;
+        }
+
+        @keyframes  moon-hide{
+
+            0%{
+                opacity: 1;
+                transform: scale(0);
+            }
+
+            100%{
+                opacity: 0;
+                transform: scale(1);
+            }
+
+            
+        }
+
+    .toggle-switch-section   .moon-round{
+
+            /* content: " "; */
+            display: block;
+            width: 120px;
+            height: 120px;
+            /* background-color: white;     */
+            background-color: rgb(28, 28, 38);
+            position: absolute;
+            top: -5%;
+            left: 30%;
+            border-radius: 50%;
+
+            animation-name:  moon-visible  ;
+            animation-timing-function: linear   ;
+            animation-duration: 0.3s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: backwards;
+
+            transition: all 0.3s linear;
+            opacity: 1;
+            
+
+           
+        }
+
+        @keyframes moon-visible {
+
+            0%{
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+            
+        }
+
+        .toggle-switch{
+
+            width: 200px;
+            height: 50px;
+            background-color: #ccc;
+            border-radius: 25px;
+            position: relative;
+            /* cursor: pointer; */
+            overflow: hidden;
+            outline: none;
+            transition: all 0.3s linear;
+        }
+        .toggle-switch .mode{
+
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: px;
+            /* border: 2px solid red; */
+            border-radius: 25px;
+            transition: all 0.3s linear;
+            user-select: none;
+            z-index: 3;
+            padding-left: 15px;
+            padding-right: 15px;
+           
+            
+
+        }
+
+        .toggle-switch .mode span{
+
+            font-size: 18px;
+            font-weight: bold;
+            /* color: rgb(20, 20, 39); */
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+
+            /* border: 2px solid red; */
+
+            cursor: pointer;
+
+        }
+        
+     .move-bg{
+
+            width: 80px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left:20%;
+            transform: translate(-50%,-50%);
+            border-radius: 25px;
+            /* border: 2px solid red; */
+            z-index: 2;
+            transition: all 0.3s linear;
+        }
+
+        .move-front{
+            left: 80%;
+            /* background-color: rgb(22, 22, 47); */
+        }
+
+        .copyright{
+
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 35px;
+
+
+        }
+
+        /* dark mode  effect */
+
+        .dark-bg{
+
+            /* background-color:rgba(28, 28, 38, 0.381) ; */
+            background-color:rgba(0, 0, 0, 0.367) ;
+        }
+        
+        .dark-bg-move{
+            
+            /* background-color: rgb(70, 70, 72); */
+            background-color: rgb(54, 54, 65);
+        }
+
+        .dark-mode-center{
+            background-color: rgb(28, 28, 38);
+            color: #fff;
+        }
+
+        .moon-bg{
+
+            background:  linear-gradient(-30deg, #00dfff 0%, #8c00ea 100%);
+
+            /* border: 2px solid red; */
+
+        }
+
+    .shape    .shape-white{
+
+            background-color: #fff;
+        }
+
+        .bg-container{
+
+            background-color: #fff;
+        }
+
+        
