@@ -24,7 +24,13 @@ function toggle_switch_theme(){
     // we  selected  the move_bg element to change it's background color and move front and back in light and dark mode;
     let move_bg=document.querySelector(".move-bg");
     
+    // we selected the time element to get the time 
     let time=document.querySelector(".time");
+
+    // we selected the audio to play when click on the move_bg element 
+    let click_audio=document.querySelector(".click-sound");
+
+    // console.log(click_audio);
     
     // console.log(time);
     
@@ -50,6 +56,9 @@ function toggle_switch_theme(){
     
     // if mode is dark add stlyes of the element  in dark mode.
     if(mode == "dark"){
+
+    // to play the click sound effect
+    click_audio.play();
     
     // we change the bg-color in dark mode from  "dark to white" of the parentElement.
     toggle_switch_center.parentElement.classList.add("bg-container");
@@ -73,6 +82,7 @@ function toggle_switch_theme(){
     
     //    console.log("clicked dark");
     
+
     
     
     
@@ -85,6 +95,8 @@ function toggle_switch_theme(){
     //else if mode is light 
     else if(mode == "light"){
     
+    // to play the click sound effect
+    click_audio.play();
     
     // we removed the stlyes that we added in  dark mode and changes to dafualt mode is light_mode.
     
