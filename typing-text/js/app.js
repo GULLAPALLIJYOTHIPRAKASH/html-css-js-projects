@@ -1,4 +1,4 @@
-        //  typing_text
+       //  typing_text
         function typing_text() {
             
         
