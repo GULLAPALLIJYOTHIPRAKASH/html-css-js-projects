@@ -1,4 +1,5 @@
-//  user_testimonial function
+//  user_testimonial function add event 
+window.addEventListener("DOMContentLoaded", user_testimonial);
 function user_testimonial(){
 
  // we selected the user_desc,user_img and user_name element
@@ -142,6 +143,6 @@ setInterval(show_profile,5000);
 }
 
  //call the user_testimonial function;
- user_testimonial();
+//  user_testimonial();
 
  
