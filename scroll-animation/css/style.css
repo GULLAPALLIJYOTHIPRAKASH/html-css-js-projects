@@ -1,0 +1,150 @@
+
+
+/* global styles */
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+
+    width: 1vw;
+    background-color: orangered;
+    background-color: rgb(154, 153, 153);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+
+   
+    background-color: rgba(255, 68, 0, 0.739);
+    border-radius: 10px;
+    
+}
+
+
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right:auto ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+body{
+
+    font-family: monospace;
+}
+
+/* scroll animation styles */
+
+.scroll-animation-container{
+
+    width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.scroll-animation-center{
+
+    /* border: 2px solid green; */
+    /* width: 90vw;
+    max-width: 950px; */
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+
+
+.title{
+
+    font-size: 25px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box{
+
+    width: 400px;
+    height: 200px;
+    background-color: rgb(73, 117, 198);            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 20px;
+    transition: all 0.4s linear;
+    transform: translateX(400%) ;
+    box-shadow: 1px 1px 11px 1px grey;
+    position: relative;
+    
+    
+}
+
+
+
+
+
+.box.visible, .box:nth-of-type(even).visible{
+    transform: translate(0%);
+}
+
+.box:nth-of-type(even){
+
+    transform: translateX(-400%);
+    background-color: rgb(198, 110, 73);            
+
+}
+
+.box h3{
+   
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+   
+    
+}
