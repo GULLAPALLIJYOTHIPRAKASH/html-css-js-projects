@@ -1,5 +1,3 @@
-//  user_testimonial function add event 
-window.addEventListener("DOMContentLoaded", user_testimonial);
 function user_testimonial(){
 
  // we selected the user_desc,user_img and user_name element
@@ -7,13 +5,21 @@ function user_testimonial(){
  let user_img=document.querySelector(".img-container img");
  let user_name=document.querySelector(".user-name");
 
- // console.log(user_desc);
- // console.log(user_img);
- // console.log(user_name);
+
 
 
  //   we taken array of objects with men / women profiles alternate
  const users_list=[
+
+
+    // men profile
+    {
+        user_name:"Arjun",
+        user_role:"Web engineer",
+        user_pic:'./assets/human-1.jpg',
+        user_about:"He is an amazing Web developer that delivered the task exactly how we need it, do yourself a favor and hire her, you will not be disappointed by the work delivered. He has 2+ years of experience in the Aptiv company, During projects he follows the SDLC to build interactive projects. He will go the extra mile to make sure that you are happy with your project. I will surely work again with him!"
+    },
+
 
  // men profile
      {
@@ -97,19 +103,13 @@ function user_testimonial(){
      
  ]
 
- // initial value count=0;
- let count=0;
+ // initial value count=1;
+ let count=1;
 
  // function to show the user profiles
  function  show_profile(){
 
- // To check the count is less than the user_list array lenght   
- if(count < users_list.length){
-
-     // console.log(count);
-
      // adding the each object properties to user_desc,user_img,user_name elements through index with count.
-
      user_desc.innerText=users_list[count].user_about;
      user_img.src=users_list[count].user_pic;
      user_name.innerText=`${users_list[count].user_name},${users_list[count].user_role}`;
@@ -117,32 +117,22 @@ function user_testimonial(){
      // then update count with count value+1
      count=count+1;
 
- }
+ // To check the count is greater than the user_list array lenght then    
+    if(count > users_list.length-1){
 
- // else if count is great than user_list array lenght then go to else
-
- else{
-
-     // then update  if block is flase and make count =0;
-
+    // make count to zero.
      count=0;
-
-     // also add initail value to user_desc,user_img,user_name elements
-
-     user_desc.innerText="He is an amazing Web developer that delivered the task exactly how we need it, do yourself a favor and hire her, you will not be disappointed by the work delivered. He has 2+ years of experience in the Aptiv company, During projects he follows the SDLC to build interactive projects. He will go the extra mile to make sure that you are happy with your project. I will surely work again with him!";
-     user_img.src="./assets/human-1.jpg";
-     user_name.innerText=`Arjun, Web engineer`;
 
  }
 
 }
 
-//    set the interval to call the show_profile function with every 5000second
-setInterval(show_profile,5000);
+// call the  show_profile function after 10s == 10000ms
+setInterval(show_profile,10000);
 
 }
 
  //call the user_testimonial function;
-//  user_testimonial();
+ user_testimonial();
 
  
