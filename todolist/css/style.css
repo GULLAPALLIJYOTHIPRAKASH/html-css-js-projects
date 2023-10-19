@@ -230,15 +230,16 @@ justify-content: center;
     
 }
 
-.todo-list-section .single-todo-list:hover{
-    background-color: rgba(128, 128, 128, 0.597);
+/* .todo-list-section .single-todo-list:hover{
+    background-color: rgba(210, 99, 99, 0.597);
     
-}
+} */
 .todo-list-section .single-todo-list .todo-comment{
     color: black;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: capitalize;
+    
 }
 
 .todo-list-section .single-todo-list .todo-list-icons{
@@ -250,8 +251,27 @@ justify-content: center;
 }
 .single-todo-list .todo-list-icons .edit-icon,.delete-icon{
     cursor: pointer;
+    color: red;
 
 }
+
+.single-todo-list .todo-list-icons .edit-icon{
+    color: green;
+}
+
+.single-todo-list .todo-list-icons .delete-icon:hover{
+
+    opacity: 0.6;
+
+}
+
+.single-todo-list .todo-list-icons .edit-icon:hover{
+
+    opacity: 0.6;
+
+}
+
+
 
 .todo-list-container .todo-list-center .todo-clear{
     width: 150px;
@@ -269,6 +289,7 @@ justify-content: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 
 
 }
