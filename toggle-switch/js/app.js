@@ -169,6 +169,7 @@ function toggle_switch_theme(){
     }
     
     
+    
     // this function is for both darkMode and lightMode elements when it clicked.
     function change_mode(e){
     
