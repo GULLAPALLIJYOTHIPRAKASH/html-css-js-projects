@@ -57,8 +57,8 @@ function toggle_switch_theme(){
     // if mode is dark add stlyes of the element  in dark mode.
     if(mode == "dark"){
 
-    // to play the click sound effect
-    click_audio.play();
+    // // to play the click sound effect
+    // click_audio.play();
     
     // we change the bg-color in dark mode from  "dark to white" of the parentElement.
     toggle_switch_center.parentElement.classList.add("bg-container");
@@ -95,8 +95,8 @@ function toggle_switch_theme(){
     //else if mode is light 
     else if(mode == "light"){
     
-    // to play the click sound effect
-    click_audio.play();
+    // // to play the click sound effect
+    // click_audio.play();
     
     // we removed the stlyes that we added in  dark mode and changes to dafualt mode is light_mode.
     
@@ -156,16 +156,28 @@ function toggle_switch_theme(){
     darkMode.addEventListener("click", change_mode);
     lightMode.addEventListener("click", change_mode);
     
+    // to play the sound when clicked
+    lightMode.addEventListener("click", play_sound);
+    darkMode.addEventListener("click", play_sound);
+
+    // play_sound
+    function play_sound(){
+
+    // to play the click sound effect
+    click_audio.load();
+    click_audio.play();
+    }
+    
     
     // this function is for both darkMode and lightMode elements when it clicked.
     function change_mode(e){
     
     // we get mode  available in localStorage
     let mode=localStorage.getItem("mode");
-    
+
     // event.target.id is equall to light 
     if(e.target.id == "light"){
-    
+
     // then new_mode variable store the light
     let new_mode= e.target.id  ;
     
