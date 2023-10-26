@@ -20,12 +20,24 @@ function countdown_timer(){
             let sample_date= new Date();
 
             // we taken an array of months
-            let Months_list=['jan','feb','mar', 'apr','may','jun','jul','aug','sept','oct','nov','dec'];
+            let Months_list=[
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",];
 
-            // now we added inside date is 'Month date, year HH:MM:SS (24 hour format)'
+            // now we added inside date in format 'year, month,date,HH,MM,SS (24 hour format)'
             // then countdown time is set like every month   current date + 7 (7+7= 14 date ) , current year  and time is completed 23:59:59 hours
-            let countdown_time= new Date(`${Months_list[sample_date.getMonth()]} ${sample_date.getDate()+7}, ${sample_date.getFullYear()}  23:59:59`).getTime();
-
+            // if the day is more than 30 or 31 +7 will add to next month.
+            let countdown_time= new Date(sample_date.getFullYear(),sample_date.getMonth(),sample_date.getDate()+7,23,59,59).getTime();
             // console.log(countdown_time);
 
             //  we will get current time
