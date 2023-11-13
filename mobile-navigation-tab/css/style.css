@@ -34,11 +34,17 @@ a{
     text-align: center;
 }
 
+body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 /* mobile navigation tab styles */
 
 .mobile-navigation-tab-container{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
@@ -63,6 +69,7 @@ a{
     outline: 3px solid grey;
     outline-offset: 2px;
     background-color: white;
+
 }
 
 .mobile-navigation-tab-center .img-container{
