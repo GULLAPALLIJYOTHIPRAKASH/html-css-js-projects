@@ -43,7 +43,7 @@ body{
 /* mobile navigation tab styles */
 
 .mobile-navigation-tab-container{
-    width: 100%;
+    width: 100%; /* min-height:100vh */
     height: 100vh;
     /* border: 2px solid red; */
     display: flex;
