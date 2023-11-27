@@ -36,7 +36,8 @@ function search_input_validation(){
         window.alert("Please Enter Valid Food Item");
 
         // then make input value to empty
-        search_input.value='';
+        // or with localstorage value display in text input a value
+        search_input.value=localStorage.getItem("search-value")? localStorage.getItem("search-value") : '';
 
 
     }
@@ -45,6 +46,7 @@ function search_input_validation(){
     else{
 
         // input value is true then call api function
+        localStorage.setItem("search-value",value.trim());
        food_api(value.trim());
 
 
@@ -73,8 +75,9 @@ search_input.addEventListener("keydown" ,(e) =>{
 
 /*food api function with default value is chicken ,
 to show the value related recipe item when page load*/
-async function food_api(value="chicken"){
+async function food_api(value=localStorage.getItem('search-value') ? localStorage.getItem("search-value"):"chicken"){
 
+    search_input.value=value
     // request the api
     let req= await fetch(api_url+value);
 
@@ -135,6 +138,14 @@ async function food_api(value="chicken"){
 // to make 1st section with result obj value(append aritlce)
 function  show_food_items(result_list){
 
+    // get the stored value 
+    let obj=JSON.parse(localStorage.getItem("obj"));
+
+    // hide  food_section,  if obj is found in localstorage
+    if(obj){
+
+        food_section.classList.add("hide");
+    }
     // iterate the result array 
     result_list.forEach( (item) => {
 
@@ -153,8 +164,7 @@ function  show_food_items(result_list){
         /* then added content to element ,and 
         to make display name and img of reicpe with css style */
         article.innerHTML=`
-        <a href="#top">
-            <div class="img-container">
+            <div class="img-container" id="${item.strMeal}">
                 <img src="${item.strMealThumb}" alt="${item.strMeal}">
                 <div class="recipe-navigation">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -162,8 +172,7 @@ function  show_food_items(result_list){
             </div>
             <div class="recipe-info">
             <h3 class="recipe-name">${item.strMeal}</h3>
-            </div>
-        </a>`
+            </div>`
 
         // then append each article to 1st section 
         food_section.append(article);
@@ -186,6 +195,9 @@ function show_target_food(result_list){
             // get the dataset value
             foodid=`${e.currentTarget.dataset.foodId}`;
 
+            // scroll to top when item selected
+            window.scrollTo(0,0);
+
             // to return the  single obj by iterate the result obj array
             let single_food=result_list.find( (item)=>{
 
@@ -194,16 +206,44 @@ function show_target_food(result_list){
                 return item.idMeal === foodid;
             });
 
-            // this function helps to show food recipe instruction of single item
-            get_single_food_item(single_food);
+            // this function helps to update localstorage with  food item obj
+                update_storage(single_food);
+
                     
         });
     });
 }
 
+// set with localstorage for instrucntion page;
+set_storage();
+
+function set_storage(){
+
+    let obj=localStorage.getItem("obj");
+
+    if(!obj){
+
+        obj=null;
+        localStorage.setItem('obj',obj);
+    }
+    update_storage(JSON.parse(obj));
+}
+
+// update the storage and display recipe instrunction page
+function update_storage(obj){
+
+    if(obj){
+
+        localStorage.setItem("obj",JSON.stringify(obj));
+
+        let recipe_obj=JSON.parse(localStorage.getItem("obj"));
+
+        show_food_instruction(recipe_obj);
+    }
+}
 
 // this function helps to show food recipe instruction of single item
-function get_single_food_item(single_food){
+function show_food_instruction(single_food){
 
     // 1st section not have hide class
     if(!food_section.classList.contains("hide")){
@@ -232,7 +272,7 @@ function get_single_food_item(single_food){
             <h3 class="title">${single_food.strMeal}</h3>
             <p class="recipe-area">${single_food.strArea}</p>
             <div class="close-container">
-                <i class="fa-solid fa-arrow-left  back-btn" title="Go Back"></i>
+               <a href='#${single_food.strMeal}'> <i class="fa-solid fa-arrow-left  back-btn" title="Go Back"></i></a>
             </div>
         </div>
         <div class="two-template-column ">
@@ -280,6 +320,9 @@ function going_back(){
 
                 // hide the instruction page
                 recipe_instruction_section.classList.add("hide");
+
+                // clear localStorage will null
+                localStorage.setItem("obj",null);
 
             })
 
