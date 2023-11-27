@@ -119,6 +119,12 @@ async function food_api(value=localStorage.getItem('search-value') ? localStorag
 
             // visible the 2nd section
             no_result.classList.remove("hide");
+            
+            // no value in input 
+            search_input.value='';
+
+            // set storage with empty value;
+            localStorage.setItem("search-value",'');
         }
 
     }
