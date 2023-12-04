@@ -1,0 +1,132 @@
+
+
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    *,::after,::before{
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    /* a{
+    text-decoration: none;
+    } */
+
+    body{
+
+        font-family: 'Roboto Slab', serif;
+    }
+    /* background-video styles */
+
+    .background-video-container{
+        width: 100%;
+    }
+
+    video{
+            width:100%;
+            height: 100vh;
+            object-fit: cover;
+            position: relative;
+    }
+
+    .heading{
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 100px;
+            /* border: 2px solid red; */
+            text-align: center;
+    }
+
+    .heading .title{
+            font-size: 40px;
+            /* font-weight: 550; */
+            text-transform: capitalize;
+            letter-spacing: 1.5px;
+    }
+
+    .heading .title span{
+            display: block;
+            font-size: 50px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: capitalize;
+
+    }
+
+    .background-video-info{
+            width: 95vw;
+            max-width: 700px;
+            position: absolute;
+            top:50% ;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin-top: 120px;
+            padding: 20px 15px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.204);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
+            user-select: none;
+
+
+    }
+
+    .background-video-info .video-desc{
+                width: 100%;
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                line-height: 30px;
+                text-align: justify;
+                word-break: break-all;
+
+    }
+
+    .background-video-info .copy-right{
+            font-size: 15px;
+            margin-top: 5px;
+            line-height: 20px;
+    }
+
+    .background-video-info .copy-right a{
+                color: white;
+                text-decoration: underline;
+    }
+
+    @media screen and (min-width :765px) {
+
+    .heading .title{
+        font-size: 45px;
+    }
+
+    .heading .title span{
+
+        font-size: 60px;
+    }
+
+    .background-video-info{
+        padding: 20px;
+    }
+
+
+    }
