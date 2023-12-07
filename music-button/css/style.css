@@ -1,0 +1,104 @@
+
+/* global styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 204, 204);
+}
+/* music button styles */
+
+.heading .title{
+
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: rgba(150, 17, 198, 0.472);
+    margin-bottom: 50px;
+}
+.btn-container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   
+
+}
+.btn-container button{
+    color: white;
+    background-color: rgba(150, 17, 198, 0.472);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+.btn-container button:hover{
+
+    background-color: rgba(191, 100, 224, 0.472);
+
+
+}
+
+.btn-container button:active{
+
+        transform: scale(0.93);
+
+}
+
+.copy-right{
+
+    color: rgba(150, 17, 198, 0.472);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
