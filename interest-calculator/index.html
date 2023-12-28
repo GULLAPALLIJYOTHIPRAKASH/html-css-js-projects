@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="keywords" content="HTML5,CSS3,JAVASCRIPT,FRONT WEB DEVELOPMENT, GULLAPALLI JYOTHI PRAKASH,INTEREST,CALCULATOR">
+<meta name="description" content="interest calculator developed by gullapalli jyothi prakash">
+<script src="https://kit.fontawesome.com/2373475470.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="./icon/bank-favicon.svg" type="image/x-icon">
+<link rel="stylesheet" href="./css/style.css">
+<title>Interest Calculator App</title>
+</head>
+<body>
+  
+    <!-- interest calculator start -->
+    <div class="interest-calculator-container">
+        <div class="interest-calculator-center">
+            <div class="heading-section">
+                <h3 class="title">interest calculator</h3>
+            </div>
+            <div class="interest-calculator-section">
+                <div class="interest-calculator-form">
+                    <div>
+                        <label for="amount">your amount(💰):</label>
+                        <input type="number"  id="amount" step="1" min="1" value="1000" placeholder="Enter Your Amount" >
+                    </div>
+                    <div >
+                        <label for="rate">interest rate(%):</label>
+                        <input type="number"  id="rate" step="1" min="1" value="10" placeholder="Enter Your Interest Rate">
+                    </div>
+                    <div>
+                        <label for="tenure">select tenure(⌚):</label>
+                        <select  id="tenure">
+                            <option value="Days">days</option>
+                            <option value="Weeks">weeks</option>
+                            <option value="Months">months</option>
+                            <option value="Years">years</option>
+                        </select>
+                    </div>
+                    <!-- <div>
+                        <label for="">select days(🗓️):</label>
+                        <input type="number"  id="rate" step="1" min="1" value="10" placeholder="Enter Your Interest Rate">
+                    </div> -->
+                    <div class="button-container">
+                        <button id="calculator">calculate</button>
+                    </div>
+        
+                    </div>
+                    <div class="result">
+                        <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+                        <h4 class="small-head">your option</h4>
+                        <h3 class="principal">principal amount(💰):</h3>
+                        <h3 class="interest">interest amount(💹):</h3>
+                        <hr>
+                        <h3 class="total">total  amount(🤑):</h3>
+                        <hr>
+                    </div>
+            </div>
+            <p class="copy-right">&copy;made by gullapalli jyothi prakash</p>
+        </div>
+    </div>
+    <!-- interest calculator end -->
+
+   <script src="./js/app.js"></script>
+</body>
+</html>

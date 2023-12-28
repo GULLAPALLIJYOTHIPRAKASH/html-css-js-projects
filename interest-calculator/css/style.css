@@ -1,0 +1,336 @@
+
+
+/* global styles */
+    *{
+            padding:0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+
+        }
+
+        *,::after,::before{
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+
+        ul{
+
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .wrapper{
+
+            max-width: 1250px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .text-center{
+
+            text-align: center;
+        }
+
+        body{
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* interest calculator styles */
+
+        .interest-calculator-container{
+
+            /* border: 2px solid red; */
+            background-color: #d4d9ed;
+            width: 100%;
+            height: 100vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+        .interest-calculator-center{
+
+            width: 90vw;
+            max-width: 650px;
+            /* min-height: 250px; */
+            /* border: 2px solid greenyellow; */
+            background-color: #fff;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 9px 15px 11px rgba(0,0,0,0.1);
+                    box-shadow: 0px 9px 15px 11px rgba(0,0,0,0.1);
+            padding: 20px 10px;
+            /* position: relative; */
+        
+        }
+
+        .interest-calculator-center .heading-section .title{
+
+            color: #000015;
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        .interest-calculator-section{
+            
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin-top: 25px;
+        }
+       .interest-calculator-center .interest-calculator-form{
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 20px;
+       }
+
+       .interest-calculator-form div{
+            width: 80%;
+            /* border: 2px saddlebrown solid; */
+            /* display: flex;
+            flex-direction: column; */
+            /* border: 2px solid red; */
+       }
+
+       .interest-calculator-form div input,.interest-calculator-form #tenure{
+         display: block;
+         width: 100%;
+         padding: 10px;
+         font-size: 18px;
+         border: 2px solid  #665bb4;
+         border-radius: 5px;
+         outline: none;
+         color: #000015;
+         background-color: #e3e1ff;
+         background-color: #fff;
+         -webkit-transition: all 0.1s linear;
+         -o-transition: all 0.1s linear;
+         transition: all 0.1s linear;
+         text-transform: capitalize;
+         margin-top: 10px;
+        }
+
+        .interest-calculator-form div input::-webkit-input-placeholder{
+
+            font-size: 15px ;
+        }
+
+        .interest-calculator-form div input::-moz-placeholder{
+
+            font-size: 15px ;
+        }
+
+        .interest-calculator-form div input:-ms-input-placeholder{
+
+            font-size: 15px ;
+        }
+
+        .interest-calculator-form div input::-ms-input-placeholder{
+
+            font-size: 15px ;
+        }
+
+        .interest-calculator-form div input::placeholder{
+
+            font-size: 15px ;
+        }
+
+       .interest-calculator-form div input:focus{
+
+
+        background-color: #b197fa67;
+        
+           
+       }
+
+
+       .interest-calculator-form #tenure:focus{
+        /* background-color: #fff; */
+        background-color: #b197fa67;
+       }
+       .interest-calculator-form  label{
+        /* border: 2px solid red; */
+        font-size: 16px;
+        font-weight: 600;
+        color: #000015;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        cursor: pointer;
+
+       }
+
+       .button-container #calculator{
+         width: 100%;
+         min-height: 45px;
+         border: none;
+         outline: none;
+         font-size: 20px;
+         text-transform: capitalize;
+         letter-spacing: 1px;
+         color: #000015;
+         background-color: #665bb4;
+         border-radius: 5px;
+         cursor: pointer;
+         display: -webkit-inline-box;
+         display: -ms-inline-flexbox;
+         display: inline-flex;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+         -webkit-box-align: center;
+             -ms-flex-align: center;
+                 align-items: center;
+         text-align: center;
+         -webkit-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+         transition: all 0.3s linear;
+       }
+
+       .button-container #calculator:hover{
+         background-color: #453f7f;
+         color: #fff;
+       }
+       
+       .button-container #calculator:active{
+
+        -webkit-transform: scale(0.92);
+
+            -ms-transform: scale(0.92);
+
+                transform: scale(0.92);
+       }
+
+       .copy-right{
+
+        font-size: 14px;
+        font-weight: bold;
+        color: #000015;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 10px;
+        
+       }
+
+       .result{
+        width: 100%;
+        height: 100%;
+        /* border: 2px  solid red; */
+        padding: 15px;
+        font-size: 14px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        display: none;
+    }
+    
+    .result h3{
+        line-height: 90px;
+    }
+
+    .result  #close-btn{
+
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #665bb4;
+        -webkit-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+        outline: 2px solid #453f7f;
+        border-radius: 50%;
+        outline-offset: 5px;
+        
+    }
+
+    .result  #close-btn:hover{
+
+        color: #453f7f;
+    }
+
+    .result  #close-btn:active{
+     
+        -webkit-transform: scale(0.92);
+     
+            -ms-transform: scale(0.92);
+     
+                transform: scale(0.92);
+    }
+
+       .visible{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #ffffff;
+       }
+
+       .small-head{
+
+        font-size:  20px;
+        color: #453f7f;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-align: center;
+       }
+
+       
+       
+
+       @media screen and (min-width: 789px) {
+
+
+        .interest-calculator-center .heading-section .title{
+
+            font-size: 30px;
+        }
+ 
+        .interest-calculator-form  label{
+
+            font-size: 18px;
+        }
+
+
+        .copy-right{
+
+            font-size: 16px;
+        }
+
+        .result{
+
+            font-size: 16px;
+        }
+
+        .result  #close-btn{
+
+            font-size: 20px;
+        }
+
+        
+    }
