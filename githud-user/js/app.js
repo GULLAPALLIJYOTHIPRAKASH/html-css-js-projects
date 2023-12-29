@@ -11,28 +11,28 @@
             // console.log(search_btn);
     
             // we selected the  img ,name, about, follower/ing ,repository elements
-            let githud_name=document.querySelector(".user-name");
+            let github_name=document.querySelector(".user-name");
     
-            // console.log(githud_name);
+            // console.log(github_name);
     
-            let githud_bio=document.querySelector(".about-user");
+            let github_bio=document.querySelector(".about-user");
     
-            // console.log(githud_bio);
+            // console.log(github_bio);
     
-            let  githud_profile_img=document.querySelector(".img-container");
+            let  github_profile_img=document.querySelector(".img-container");
     
     
-            let  githud_link=document.querySelector(".button-link");
+            let  github_link=document.querySelector(".button-link");
     
-            // console.log(githud_profile_img);
+            // console.log(github_profile_img);
     
-            let githud_follower=document.querySelector(".user-followers");
-            let githud_following=document.querySelector(".user-following");
-            let githud_repository=document.querySelector(".user-repository");
+            let github_follower=document.querySelector(".user-followers");
+            let github_following=document.querySelector(".user-following");
+            let github_repository=document.querySelector(".user-repository");
     
-            // console.log(githud_repository);
+            // console.log(github_repository);
     
-            // githud api link
+            // github api link
             // const api=`https://api.github.com/users/`;
     
             // added event listener to search-btn 
@@ -69,18 +69,18 @@
     
         // added response  data in to element and added class visible to main 
     
-                githud_profile_img.src=`${response.avatar_url}`
+                github_profile_img.src=`${response.avatar_url}`
     
-                githud_name.innerText=`${response.name}`;
+                github_name.innerText=`${response.name}`;
     
     
-                githud_bio.innerText=`${response.bio}`
+                github_bio.innerText=`${response.bio}`
     
-                githud_follower.innerText=`followers: ${response.followers}`;
-                githud_following.innerText=`following: ${response.following}`;
-                githud_repository.innerText=`repository:${response.public_repos}`;
+                github_follower.innerText=`followers: ${response.followers}`;
+                github_following.innerText=`following: ${response.following}`;
+                github_repository.innerText=`repository:${response.public_repos}`;
     
-                githud_link.href=`${response.html_url}`
+                github_link.href=`${response.html_url}`
     
                 document.querySelector(".main").classList.add("visible");
     
