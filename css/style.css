@@ -1,0 +1,224 @@
+
+/* global styles */
+
+*{
+    padding:0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,::after,::before*{
+    padding:0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+.wrapper{
+
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* notification styles */
+
+.notification-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #e5def6;
+
+}
+
+.notification-container .notification-center{
+    width: 90vw;
+    max-width: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* border: 2px solid red; */
+}
+
+.heading{
+    /* border: 2px solid greenyellow; */
+    width: 100%;
+    padding: 15px 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.heading .title{
+
+    font-size: 25px;
+    color: #6d58a2;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+
+}
+
+.button-container{
+    /* border: 2px solid goldenrod; */
+    margin-bottom: 25px;
+    
+}
+
+.button-container #notification-btn{
+    position: relative;
+    width: 220px;
+    min-height: 45px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color:#fff1ff;
+    background-color: #383666;
+    cursor: pointer;
+    border-radius:4px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.button-container  #bell{
+    /* display: none; */
+    position: absolute;
+    top: -13px;
+    right: 13px;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.button-container #notification-btn:hover   #bell{
+    top: 13px;
+    /* right: 13px; */
+    opacity: 1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    
+}
+
+.button-container #notification-btn:hover{
+
+    background-color: #383666dd;
+}
+
+.button-container #notification-btn:active{
+
+    -webkit-transform: scale(0.92);
+
+        -ms-transform: scale(0.92);
+
+            transform: scale(0.92);
+}
+
+.notification-center  .notification-info{
+
+        width: 100%;
+        border: 2px solid #0000ff;
+        border-radius: 5px;
+        padding: 10px  20px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+        /* background-color: #f8efe9; */
+        /* text-align: center; */
+}
+
+.notification-info .title{
+
+    color: #383666;
+    font-size:18.5px;
+    margin-bottom: 5px;
+}
+
+.notification-info .list li{
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+.copy-right{
+
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #383666;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.copy-right:hover{
+
+    -webkit-text-decoration:2px underline;
+
+            text-decoration:2px underline;
+}
+
+@media screen and (min-width: 350px) {
+
+    .button-container #notification-btn{
+        
+        width: 250px;
+    }
+
+    .button-container  #bell{
+ 
+        right: 20px;
+    
+    }
+
+
+    
+}
