@@ -61,7 +61,7 @@ body{
 .profile-card-center .heading{
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
 }
 
@@ -91,6 +91,7 @@ body{
     box-shadow: 1px 1px 3px 1px gray;
 position: relative;
 background-color: #ffffff;
+transform: scale(0.95);
 }
 .img-container{
 
@@ -218,7 +219,7 @@ background-color: #ffffff;
     letter-spacing: 1.5px;
 }
 
-@media screen and (min-width: 789px) {
+@media screen and ( min-width: 789px) {
 
     .heading .title{
 
