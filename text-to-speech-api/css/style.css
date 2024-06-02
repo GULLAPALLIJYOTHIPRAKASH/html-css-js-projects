@@ -1,0 +1,190 @@
+/* global styles */
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+
+    font-family: "Open Sans", sans-serif;
+}
+
+/* speech container styles */
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 300px ), repeating-linear-gradient(#6caad355, #6caad3 );       
+ }
+
+.center{
+
+    width: 90vw;
+    max-width: 600px;
+    min-height: 250px;
+    /* border: 2px solid red; */
+    background-color: #fff;
+    -webkit-box-shadow: #64646f33 0px 7px 29px 0px;
+            box-shadow: #64646f33 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+.heading{
+
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    color: #34495E;
+}
+.form{
+
+    width: 100%;
+    /* border: 2px solid goldenrod; */
+    padding: 10px 20px;
+    
+}
+.form label{
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-size: 550;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #34495E;
+    cursor: pointer;
+}
+
+.form .field{
+
+    margin-bottom: 15px;
+}
+.form #text-input{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #34495E;
+    text-transform: capitalize;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #8cb1ca;
+    border-radius: 5px;
+    outline: none;
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.field #speech-list{
+
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8cb1ca   ;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 540;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.form #text-input:focus,  .field #speech-list:focus{
+
+    border: 2px solid #8cb1ca   ;
+    
+}
+
+.form button{
+
+    width: 100%;
+    min-height: 40px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2E86C1;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.form button:hover{
+
+    opacity: 0.8;
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
+}
+
+.copy-right{
+
+    font-size: 15px;
+    color: #34495E;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
