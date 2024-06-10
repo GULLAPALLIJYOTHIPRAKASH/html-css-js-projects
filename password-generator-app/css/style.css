@@ -1,0 +1,340 @@
+/* global styles */
+*{
+    padding: 0;
+
+    margin: 0;
+
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* password generator styles */
+.password-generator-container{
+
+
+
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
+
+    /* border: 2px solid red; */
+
+    background-color: #F2F3F4;
+
+
+
+
+
+}
+
+
+
+
+.password-generator-center{
+
+
+
+
+    width: 100vw ;
+
+    max-width: 450px;
+
+    min-height: 200px;
+
+    /* border: 2px solid black; */
+
+    padding: 15px;
+
+    /* outline: 2px solid black;
+
+    outline-offset: 5px; */
+
+    border-radius: 5px; 
+
+    -webkit-transform: scale(0.96); 
+
+    -ms-transform: scale(0.96); 
+
+    transform: scale(0.96);
+
+    -webkit-box-shadow: 1px 1px 5px 1px  rgb(187, 180, 180)   ;
+
+    box-shadow: 1px 1px 5px 1px  rgb(187, 180, 180)   ;
+
+    background-color: #fff;
+
+}
+
+
+
+
+.heading{
+
+  
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+}
+
+
+
+
+.heading .title{
+
+    font-size: 20px;
+
+    font-weight: 550;
+
+    text-transform: capitalize;
+
+    letter-spacing: 1px;
+
+    color: #273746;
+
+    text-align: center;
+
+}
+
+
+.form{
+
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+.form label{
+
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-right: 5px;  
+    text-transform: capitalize;
+    color: #273746;
+    font-weight: 530;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+
+.form .field{
+
+    width: 100%;
+    /* border: 2px solid red; */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.field #drop_down_length , .field #passcode{
+
+    
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid  #273746;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #273746;;
+    -webkit-user-select: none;;
+    -moz-user-select: none;;
+    -ms-user-select: none;;
+    user-select: none;
+    margin-top: 10px;
+    -webkit-transition: all 5ms linear;
+    -o-transition: all 5ms linear;
+    transition: all 5ms linear;
+}
+
+
+
+
+.field #drop_down_length{
+
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+.field #passcode{
+
+    color: rgba(255, 80, 80, 0.997);
+
+}
+
+
+
+
+
+
+.field #passcode:focus , .field #drop_down_length:focus{
+
+    border: 1.5px solid  #273746;
+}
+
+
+
+
+.field .copy-icon{
+
+    position: absolute;
+    top: 36px;
+    right: 15px;
+    font-size: 25px;
+    z-index: 1;
+    color: lightslategray;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+
+
+
+.field .copy-icon:hover{
+
+    color: #000;
+
+}
+
+
+
+
+.field .copy-icon:active{
+
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+
+}
+
+
+.password-generator-center #generate-btn{
+
+    width: 100%;
+    min-height: 45px;
+    border: none;
+    outline: none;
+    background-color: #273746;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    opacity: 1;
+
+    
+
+}
+
+
+
+.password-generator-center #generate-btn:hover{
+
+    opacity: 0.8;
+
+}
+
+.password-generator-center #generate-btn:active{
+
+        -webkit-transform: scale(0.96);
+        -ms-transform: scale(0.96);
+        transform: scale(0.96);
+}
+
+
+
+
+.password-generator-center .copy-right{
+
+        text-align: center;
+        color: #273746;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin: 10px 0;
+
+}
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+

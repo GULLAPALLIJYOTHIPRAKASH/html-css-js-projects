@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is developed using HTML5 , CSS3 , JavaScript,password generator,localStorage,responsive web design">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript,password generator,localStorage,responsive web design, web development, gullapalli jyothi prakash,frontend web development">
+    <meta name="author" content="gullapalli jyothi prakash">
+
+    <!-- Specify the technologies used -->
+    <meta name="generator" content="HTML5, CSS3, JavaScript,password generator,localStorage,responsive web design" >
+    <script src="https://kit.fontawesome.com/2373475470.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./icons/password.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Password Generate App</title>
+   
+</head>
+
+<body>
+
+    <!-- password-generator start -->
+    <div class="password-generator-container">
+        <div class="password-generator-center">
+            <div class="heading">
+                <h3 class="title">password generator</h3>
+            </div>
+            <div class="form">
+                <div class="field">
+                    <label for="drop_down_length">length :</label>
+                    <select id="drop_down_length" value="8 characters">
+                        <option value="8">8 characters</option>
+                        <option value="12">12 characters</option>
+                        <option value="15">15 characters</option>
+                        <option value="20">20 characters</option>
+                        <option value="24">24 characters</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="passcode">password: </label>
+                    <input type="text"  id="passcode" readonly>
+                    <i class="fa-regular fa-copy copy-icon" ></i>                    
+                </div>
+                <button id="generate-btn">generate</button>
+            </div>
+            <p class="copy-right">made by gullapalli jyothi prakash</p>
+        </div>
+    </div>
+    <!-- password-generator end -->
+
+   <script src="./js/app.js"></script>
+
+</body>
+
+</html>
