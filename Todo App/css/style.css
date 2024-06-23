@@ -1,0 +1,622 @@
+/* global style */
+*{
+
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+ul{
+
+    list-style-type: none;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+body{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* todo container styles */
+
+.todo-container{
+
+    width: 100%;
+    min-height:100vh ;
+    background-color: #fcf8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+  
+    
+}
+.todo-center{
+
+    width: 90vw;
+    max-width: 600px;
+    min-height: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    background-color: #fff;
+    
+}
+
+
+
+.todo-center .heading{
+
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 15px; 
+    position: relative;
+}
+
+.heading .title{
+
+    font-size: 25px;
+    color: #041736;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-weight: 550;
+}
+
+.heading .alert{
+    width: 100%;
+    position: absolute;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 2px 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.heading .alert.add{
+
+    /* background-color: green; */
+    color: #041736;
+    opacity: 1;
+    
+}
+
+.heading .alert.delete{
+
+    background-color: red;
+    color: #fff;
+    opacity: 1;
+}
+
+.todo-button{
+
+  
+    /* border: 2px solid green; */
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 15px;
+    background-color: #b3f2b3;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.todo-button h4{
+
+    font-size: 14px;
+    color: #041736;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.todo-button i{
+
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(0, 139, 37);
+}
+
+.todo-button:hover{
+
+    background-color: rgba(179, 242, 179, 0.775);
+}
+
+.todo-button:active{
+
+    -webkit-transform: scale(0.95);
+
+        -ms-transform: scale(0.95);
+
+            transform: scale(0.95);
+}
+
+
+.copy-right{
+
+    font-size: 14px;
+    color: #041736;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}        
+
+/* task form container styles */
+.form-container{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:-100%;
+    left: 0;
+    background-color: rgba(226, 253, 227, 0.9);
+    z-index: 10;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+ 
+    
+    }
+
+   .form-container.show-form{
+
+    top: 0;
+    left: 0;
+    opacity: 1;
+    }
+    
+    .form-center{
+        width: 95vw;
+        max-width: 600px; 
+        min-height: 350px;
+        background-color: #ffffff;
+        -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 4px;
+    }
+
+   
+
+    
+.form-container .form-heading{
+    width: 100%;
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px solid rgb(209, 219, 230);
+
+}
+
+.form-heading .title{
+
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #041736;
+    text-transform: capitalize;
+}
+
+.form-heading i{
+
+    font-size: 22px;
+    font-weight: bold;
+    color: #b1afaf ;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.form-heading i:hover{
+
+    color: #878787;;
+}
+
+.form-container .form{
+
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.form .field{
+    width: 100%;
+    /* border: 2px solid red; */
+    /* padding: 15px; */
+    margin-bottom: 10px;
+}
+
+.field label{
+    cursor: pointer;
+    color: #041736;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.field #input-task-title{
+
+    width: 100%;
+    color: #041736;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 1px solid #041736;
+    outline: none;
+    border-radius: 2px;
+}
+
+.field #task-title::-webkit-input-placeholder{
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+.field #task-title::-moz-placeholder{
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+.field #task-title:-ms-input-placeholder{
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+.field #task-title::-ms-input-placeholder{
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+.field #task-title::placeholder{
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+
+.field .info{
+
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 3px;
+    display: none;
+    text-transform: capitalize;
+}
+
+
+.field textarea{
+
+    width: 100%;
+    color: #041736;
+    height: 150px;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 1px solid #041736;
+    outline: none;
+    border-radius: 2px;
+    resize: none;
+}
+
+.field.success .info{
+
+display: inline-block;
+color: green;
+}
+
+.field.error .info{
+
+color: red;
+display: inline-block;
+}
+
+.field.success   #input-task-title , .field.success #input-task-desc{
+
+border:2px solid  green ;
+}
+
+.field.error #input-task-title , .field.error #input-task-desc{
+
+border: 2px solid red;
+}
+
+.form #task-btn{
+
+    width: 100%;
+    min-height: 40px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #041736;
+    background-color: rgb(119, 240, 119); 
+    outline: none;
+    border: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.form #task-btn:hover{
+
+    opacity: 0.8;
+}
+
+.form #task-btn:active{
+
+    -webkit-transform: scale(0.98);
+
+        -ms-transform: scale(0.98);
+
+            transform: scale(0.98);
+}
+
+/* task-items styles  */
+
+.task-items-main{
+
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+   
+}
+
+.task-items-main .single-task-item{
+
+    width: 100%;
+    /* border: 2px solid green; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column  ;
+            flex-direction: column  ;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px;
+    /* background-color: #f3cab0; */
+    /* background-color: #bef3b0; */
+    /* background-color: #b0f3e3; */
+    /* background-color: #b0dff3; */
+    /* background-color: #bdb0f3; */
+    /* background-color: #dfb0f3; */
+    /* background-color: #f3b0d1; */
+    /* background-color: #f3b0b4; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.single-task-item .task-title{
+
+    font-size: 15px;
+    color: #041736;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.single-task-item .task-desc{
+
+    font-size: 13px;
+    color: #041736  ;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+    line-height: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    margin-bottom: 15px;
+}
+
+.single-task-item .options{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+}
+
+.options i{
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+    -webkit-transition: all 0.2s linear;
+
+    -o-transition: all 0.2s linear;
+
+    transition: all 0.2s linear;
+
+}
+
+.options i:nth-child(1){
+
+    color: rgb(239, 35, 35);
+}
+
+.options i:nth-child(2){
+
+color: rgb(239, 35, 35);
+}
+
+.options i:hover{
+
+    opacity: 0.5;
+
+}
+
+
+/* js class */
+
+.hide{
+
+display: none;
+}
+
+.show{
+
+display: block;
+}
+
+
+
+/* clear btn styles */
+
+.button-container{
+
+    margin: 20px 0;
+    text-align: center;
+}
+
+.button-container #clear-btn{
+
+  
+    width: 140px;
+    min-height: 40px;
+    background-color: rgb(224, 21, 21);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border-radius: 5px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+
+.button-container  #clear-btn:hover{
+
+    opacity: 0.7;
+}
+
+.button-container  #clear-btn:active{
+
+    -webkit-transform: scale(0.95);
+
+        -ms-transform: scale(0.95);
+
+            transform: scale(0.95);
+}
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is developed using HTML5 , CSS3 , JavaScript,Todo APP,CRUD APP,localStorage,responsive web design">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript,Todo APP,CRUD APP,localStorage,responsive web design, web development, gullapalli jyothi prakash,frontend web development">
+    <meta name="author" content="gullapalli jyothi prakash">
+
+    <!-- Specify the technologies used -->
+    <meta name="generator" content="HTML5, CSS3, JavaScript,Todo APP,CRUD APP,localStorage,responsive web design" >
+    <script src="https://kit.fontawesome.com/2373475470.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./icons/journal-check.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Todo APP</title>
+</head>
+<body>
+    <!-- todo container start -->
+     <div class="todo-container">
+        <div class="todo-center">
+            <div class="heading">
+                <h3 class="title">todo app</h3> 
+                <small class="alert">add new task</small>
+                <div class="todo-button">
+                    <h4>add new task</h4>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <p class="copy-right">made by gullapalli jyothi prakash</p>
+            </div>
+
+            <!-- task form container start -->
+            <div class="form-container">
+                    <div class="form-center">
+                    <div class="form-heading">
+                        <h3 class="title">add new task</h3>
+                        <i class="fa-solid fa-close" id="close-btn"></i>
+                    </div>
+                    <form id="task-form" class="form">
+                        <div class="field">
+                            <label for="input-task-title">task title:</label><br>
+                            <input type="text"  id="input-task-title" placeholder="Enter a Title">
+                            <small class="info">error message</small>
+                        </div>
+                        <div class="field">
+                            <label for="input-task-desc">description:</label>
+                            <textarea  id="input-task-desc" cols="30" rows="10" placeholder="Enter a Description"></textarea>
+                            <small class="info">error message</small>
+                        </div>
+                        <button id="task-btn">add task</button>
+                    </form>
+                </div>
+             </div>
+            <!-- task  form container end -->
+
+            <!-- task-items-main start -->
+             <div class="task-items-main">
+                <!-- <article class="single-task-item">
+                    <h4 class="task-title">title one</h4>
+                    <p class="task-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus vel porro explicabo similique fugiat perspiciatis quos hic sit id ipsam quo, a atque in aperiam tenetur ad ratione at.</p>
+                    <span class="options">
+                        <i class="fa-solid fa-edit"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </article>                   -->
+             </div>
+            <!-- task-items-main end -->
+            
+            <!-- clear all btn start -->
+            <div class="button-container hide">
+                <a  href="#" id="clear-btn">clear all</a>
+            </div>
+            <!-- clear all btn end -->
+        </div>
+     </div>
+    <!-- todo container end -->
+     <script src="./js/app.js"></script>
+</body>
+</html>
