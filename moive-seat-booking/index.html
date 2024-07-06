@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is developed using HTML5 , CSS3 , JavaScript,Movie Seats Booking App,localStorage,responsive web design">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript,Todo APP,CRUD APP,localStorage,responsive web design, web development, gullapalli jyothi prakash,frontend web development">
+    <meta name="author" content="gullapalli jyothi prakash">
+
+    <!-- Specify the technologies used -->
+    <meta name="generator" content="HTML5, CSS3, JavaScript,Movie Seats Booking App,localStorage,responsive web design" >
+    <script src="https://kit.fontawesome.com/2373475470.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./icons/cinema.svg"type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Movie Seats Booking App</title>
+</head>
+<body>
+    <!-- movie seat booking container start -->
+     <div class="movie-seat-booking-container">
+        <div class="movie-seat-booking-center">
+            <div class="heading-section">
+                <h3 class="title">moive seats booking</h3>
+            </div>
+            <form  id="form" class="form">
+                <div class="field">
+                    <label for="moives-list">pick a moive : </label>
+                    <select  id="moives-list">
+                        <option value="11">Spider Man 4 ($11)</option>
+                        <option value="16">Hitman Agent 47 ($16)</option>
+                        <option value="15">Fast Furious 11 ($15)</option>
+                        <option value="14">RRR ($14)</option>
+                        <option value="13">Money Heist ($13)</option>
+                        <option value="12">Joker ($12)</option>
+                        <option value="10">Avengers : Endgame ($10)</option>
+                        <option value="8">Toy Story 4 ($8)</option>
+                        <option value="9">The Lion King ($9)</option>
+                    </select>
+                </div>
+            </form>
+            <!-- movie-screen start -->
+            <div class="movie-screen"></div>
+            <!-- movie-screen end -->
+
+             <!-- all seats start -->
+             <div class="all-seats">
+                    <div class="row-seats">
+                     <i class="fa-solid fa-couch seat" id="1"></i>
+                     <i class="fa-solid fa-couch seat" id="2"></i>
+                     <i class="fa-solid fa-couch seat occupied" id="3"></i>
+                     <i class="fa-solid fa-couch seat" id="4"></i>
+                     <i class="fa-solid fa-couch seat" id="5"></i>
+                     <i class="fa-solid fa-couch seat" id="6"></i>
+                     
+                    </div>
+                    <div class="row-seats">
+                        <i class="fa-solid fa-couch seat " id="7"></i>
+                        <i class="fa-solid fa-couch seat" id="8"></i>
+                        <i class="fa-solid fa-couch seat" id="9"></i>
+                        <i class="fa-solid fa-couch seat occupied" id="10"></i>
+                        <i class="fa-solid fa-couch seat" id="11"></i>
+                        <i class="fa-solid fa-couch seat" id="12"></i>
+                        
+                        
+                    </div>
+                    <div class="row-seats">
+                        <i class="fa-solid fa-couch seat" id="13"></i>
+                        <i class="fa-solid fa-couch seat " id="14"></i>
+                        <i class="fa-solid fa-couch seat" id="15"></i>
+                        <i class="fa-solid fa-couch seat" id="16"></i>
+                        <i class="fa-solid fa-couch seat" id="17"></i>
+                        <i class="fa-solid fa-couch seat occupied" id="18"></i>
+                        
+                        
+                        
+                    </div>
+                    <div class="row-seats">
+                        <i class="fa-solid fa-couch seat" id="19"></i>
+                        <i class="fa-solid fa-couch seat occupied " id="20"></i>
+                        <i class="fa-solid fa-couch seat" id="21"></i>
+                        <i class="fa-solid fa-couch seat" id="22"></i>
+                        <i class="fa-solid fa-couch seat" id="23"></i>
+                        <i class="fa-solid fa-couch seat" id="24"></i>
+                        
+                        
+                        
+                    </div>
+                    <div class="row-seats">
+                        <i class="fa-solid fa-couch seat occupied" id="25"></i>
+                        <i class="fa-solid fa-couch seat " id="26"></i>
+                        <i class="fa-solid fa-couch seat occupied" id="27"></i>
+                        <i class="fa-solid fa-couch seat" id="28"></i>
+                        <i class="fa-solid fa-couch seat" id="29"></i>
+                        <i class="fa-solid fa-couch seat" id="30"></i>
+                        
+                        
+                    </div>
+                    <div class="row-seats">
+                        <i class="fa-solid fa-couch seat" id="31"></i>
+                    <i class="fa-solid fa-couch seat " id="32"></i>
+                    <i class="fa-solid fa-couch seat occupied" id="33"></i>
+                    <i class="fa-solid fa-couch seat" id="34"></i>
+                    <i class="fa-solid fa-couch seat" id="35"></i>
+                    <i class="fa-solid fa-couch seat occupied" id="36"></i>
+                    
+                    
+            </div>
+            </div>
+            <!-- all seats end -->
+
+            <!-- seat options start -->
+            <div class="show-case">
+                <div class="row">
+                    <div class="item ">
+                        <i class="fa-solid fa-couch seat-icon unavailable" ></i>
+                        <span>unavaiable</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-couch seat-icon available"></i>
+                        <span>avaiable</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-couch seat-icon selected" ></i>
+                        <span>selected</span>
+                    </div>
+                </div>
+            </div>
+            <!-- seat options end -->
+
+            <div class="price-info">
+                <!-- You selected <span class="text-orange">0</span> seats are booked for a price of
+                $<span class="text-orange">0</span> -->
+            </div>
+            <p class="copy-right">made by gullapalli jyothi prakash</p>
+        </div>
+     </div>
+     <!-- movie seat booking container end -->
+      <script src="./js/app.js"></script>
+    </body>
+</html>
