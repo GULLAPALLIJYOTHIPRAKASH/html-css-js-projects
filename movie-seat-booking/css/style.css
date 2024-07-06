@@ -1,0 +1,314 @@
+/* global styles */
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,::after,::before{
+
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* movie-seat-booking-container styles */
+
+.movie-seat-booking-container{
+
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   background-color: #000000;
+}
+
+.movie-seat-booking-center{
+
+    width: 100vw;
+    max-width: 700px;
+    text-align: center;
+    padding: 15px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  
+}
+
+.heading-section{
+
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.heading-section .title{
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    
+}
+
+.form{
+
+    width: 100%;
+   
+   
+}
+
+.form .field{
+    
+    width: 100%;
+}
+.field label{
+
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 450;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.field #moives-list{
+    
+    padding: 7px 5px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    border-radius:5px ;
+    letter-spacing: 1px;
+    background-color: #d7d0d0;
+    color: #ca400e;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  
+}
+
+.field #moives-list:focus{
+
+    background-color: #fff;
+}
+
+.movie-screen{
+
+    width: 320px;
+    height: 150px;
+    /* border: 2px solid red; */
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+    background: #fff;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ 
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 1px 1px 10px 4px #fff;
+            box-shadow: 1px 1px 10px 4px #fff;
+
+            margin-top: 15px;
+            margin-bottom: 15px;
+            /* background-image: url("../assets/joker-moive.jpeg"); */
+            
+}
+
+.all-seats{
+
+    width: 100%;
+    /* border: 2px solid red; */
+    
+ 
+
+}
+
+.all-seats .row-seats{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 8px ;
+    
+}
+
+.row-seats .seat{
+
+    font-size: 22px;
+    color: #fff;
+    border-top-left-radius: 10px ;
+    border-top-right-radius:10px ;
+    margin-left: 5px; 
+    cursor: pointer;  
+    -webkit-transition: all 0.2s linear;  
+    -o-transition: all 0.2s linear;  
+    transition: all 0.2s linear; 
+    -webkit-transform: rotateY(-130deg); 
+            transform: rotateY(-130deg);        
+}
+
+.row-seats .seat:nth-child(2) {
+margin-right: 18px;
+}
+
+.row-seats .seat:nth-child(4) {
+margin-right: 18px;
+}
+
+.row-seats .seat.occupied{
+
+    color: rgb(113, 117, 116);
+}
+
+.row-seats .seat.selected{
+
+    color: #ca400e;
+}
+
+.row-seats .seat:hover{
+
+    -webkit-transform: rotateY(-130deg) scale(1.2);
+
+            transform: rotateY(-130deg) scale(1.2);
+}
+
+
+
+
+.show-case{
+
+    display: -webkit-inline-box;
+
+    display: -ms-inline-flexbox;
+
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #4a4949ca;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.show-case .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+}
+
+.row .item{
+
+    /* border: 2px solid rgb(230, 152, 18); */
+    padding: 5px ;
+
+}
+
+.seat-icon{
+
+    font-size: 18px;
+    -webkit-transform: rotateY(-130deg);
+            transform: rotateY(-130deg); 
+    margin-right: 5px; 
+}
+
+.item span{
+
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.seat-icon.unavailable{
+
+    color:  rgb(113, 117, 116);
+}
+
+.seat-icon.available{
+
+color: #fff;
+}
+
+.seat-icon.selected{
+
+    color: #ca400e;
+}
+
+.price-info{
+
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.price-info .text-orange{
+    font-size:16px;
+    font-weight: 550;
+    color: #ca400e;
+}
+
+.copy-right{
+
+margin-top: 12px;
+font-size: 14px;
+color: #fff;
+text-transform: capitalize;
+letter-spacing: 1px;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
