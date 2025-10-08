@@ -46,7 +46,7 @@ function show_Notification_Api(){
         // added event to notification, when clicked on notification
         notification.addEventListener('click' , (e) =>{
 
-             window.open('https://www.linkedin.com/in/jyothiprakash-gullapalli-186857207/','_blank');
+             window.open('https://www.linkedin.com/in/gullapalli-jyothiprakash/','_blank');
 
         });
 
